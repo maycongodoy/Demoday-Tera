@@ -21,6 +21,11 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks', 'testing-library', 'prettier'],
   rules: {
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }],
+
     'prettier/prettier': 'warn',
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
     'import/prefer-default-export': 'off',
