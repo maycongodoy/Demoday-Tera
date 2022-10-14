@@ -1,0 +1,43 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+.logo {
+    height: 50px;
+}
+.carrinho {
+    color: azure;
+}
+  .bi:hover {
+    background-color: rgb(218, 70, 70);
+    color: black;
+    transform: scale3d(1.4);
+    transition: 1s;
+  }
+  header ul li:hover {
+    background-color: rgb(218, 70, 70);
+    color: black;
+    transform: scale3d(1.5);
+    transition: 1s;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #000000;
+  }
+  .m-right {
+    margin-right: 10px;
+  }
+  .navbar-collapse ul {
+    height: 60px;
+    align-items: center;
+  }
+  .navbar-collapse ul li a {
+    display: flex;
+    line-height: 30px;
+  }
+  .navbar-collapse ul li {
+    padding-bottom: 0;
+  }
+  

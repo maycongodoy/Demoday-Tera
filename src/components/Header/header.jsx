@@ -1,34 +1,35 @@
 import React from "react";
+import '../Header/header.css'
+import thumb from '../Header/logo.webp'
 
 
 function Header () {
-    return (
-      <>
-        <header className="header fixed-top">
-          <nav
-            className="navbar navbar-expand-lg navbar-dark bg-dark"
-            aria-label="Tenth navbar example"
-          >
-            <div className="container justify-content-md-center w-auto width100">
-              <a className="container-fluid" href="/"
-                ><img
-                  src="../assets/imagens/img home/logo2.webp"
-                  className="img-fluid img-thumbnail logo"
-                  alt="..."
-                />
+  return (
+    <>
+      <header className="header fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+          <div className="container justify-content-md-center w-auto width100">
+              <a className="container-fluid" href="/">
+                <img src={thumb} className="img-fluid img-thumbnail logo" alt="..."/>
               </a>
-            </div>
-            <div className="container-fluid menu-hamburguer">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="true" aria-label="Toggle navigation">Ola</button>
+          </div>
+         {/* Botão do menu responsivo */}
+          <div className="container-fluid menu-hamburguer">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="true" aria-label="Toggle navigation">Ola</button>
+        {/* Botão do menu responsivo */}
 
-              <div
-                className="navbar-collapse justify-content-md-center collapse show"
-                id="navbarsExample08"
-              >
+        {/* CARRINHO DE COMPRAS */}
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart-dash carrinho" viewBox="0 0 16 16">
+           <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+           <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>
+        {/* CARRINHO DE COMPRAS */}
+            <div className="navbar-collapse justify-content-md-center collapse show" id="navbarsExample08">
                 <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
+
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/"
-                      ><svg
+                    <a className="nav-link active" aria-current="page" href="/">
+                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -36,18 +37,16 @@ function Header () {
                         className="bi bi-house-fill"
                         viewBox="0 0 16 16"
                       >
-                        <path
-                          
+                        <path                          
                           d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
                         />
-                        <path
-                          
+                        <path                          
                           d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
                         />
                       </svg>
-                      Home</a
-                    >
+                      Home</a>                    
                   </li>
+
                   <li className="nav-item">
                     <a className="nav-link active" href="/"
                       ><svg
@@ -65,9 +64,9 @@ function Header () {
                           d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1H4.268z"
                         />
                       </svg>
-                      Categorias</a
-                    >
+                      Categorias</a>
                   </li>
+
                   <li className="nav-item">
                     <a className="nav-link active" href="pages/landing.html"
                       ><svg
@@ -85,7 +84,7 @@ function Header () {
                       Ofertas
                     </a>
                   </li>
-
+        {/* MENU DROPDOWN */}
                   <li className="nav-item dropdown">
                     <a
                       className="nav-link dropdown-toggle"
@@ -96,36 +95,24 @@ function Header () {
                       aria-expanded="false"
                       >Sobre Nós
                     </a>
-                    <ul
-                      className="dropdown-menu h-auto"
-                      aria-labelledby="offcanvasNavbarLgDropdown"
-                    >
+                    <ul className="dropdown-menu h-auto" aria-labelledby="offcanvasNavbarLgDropdown">
                       <li><a className="dropdown-item" href="/">Fale Conosco</a></li>
-                      <li>
-                        <a className="dropdown-item" href="/">Dúvidas Frequentes</a>
-                      </li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="/">Central de Atendimento</a>
-                      </li>
+                      <li><a className="dropdown-item" href="/">Dúvidas Frequentes</a></li>
+                      <li><hr className="dropdown-divider" /></li>
+                      <li><a className="dropdown-item" href="/">Central de Atendimento</a></li>
                     </ul>
                   </li>
-                  <li
-                    className="navbar navbar-expand-lg navbar-dark bg-dark"
-                    role="search"
-                  >
+      {/* MENU DROPDOWN */}
+                  <li className="navbar navbar-expand-lg navbar-dark bg-dark" role="search">
                     <input
                       className="form-control me-2 w-auto"
                       type="search"
                       placeholder="Procurar..."
                       aria-label="Search"
                     />
-                    <button className="btn btn-outline-success" type="submit">
-                      Procurar
-                    </button>
+                    <button className="btn btn-outline-success" type="submit">Procurar</button>
                   </li>
+
                   <li>
                     <a href="pages/login.html" className="nav-link text-white">
                       <svg
@@ -137,14 +124,12 @@ function Header () {
                         viewBox="0 0 16 16"
                       >
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                        <path
-                          
-                          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-                        />
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                       </svg>
                       Login
                     </a>
                   </li>
+
                   <li>
                     <a href="pages/cadastro.html" className="nav-link text-white">
                       <svg
@@ -155,21 +140,20 @@ function Header () {
                         className="bi bi-key-fill"
                         viewBox="0 0 16 16"
                       >
-                        <path
-                          d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
-                        />
+                        <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                       </svg>
                       Cadastrar
                     </a>
                   </li>
+
                 </ul>
-              </div>
             </div>
-          </nav>
-    </header>
+          </div>
+        </nav>
+  </header>
 
       </>
-    )
+  )
 }
 
 export default Header;
