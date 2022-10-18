@@ -39,9 +39,15 @@
 .img-page {
    height: 300px; 
    margin-top: 30px; 
-   transform: rotate(-25deg);
+   transform: rotate(-25deg) ;
+   transition: 1s;
 }
-.img-page:hover {
-    transition: 1s;
+.img-page:hover {    
+    
     transform: rotate(0deg);
+}
+
+
+.video {
+    height: 80px;
 }

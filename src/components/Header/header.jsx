@@ -5,6 +5,7 @@ import search from '../Header/search.svg'
 
 
 function Header () {
+  
   return (
     <>
       <header className="header fixed-top">

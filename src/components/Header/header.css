@@ -47,7 +47,7 @@ header {
   .navbar-collapse ul li a {
     display: flex;
     line-height: 30px;
-    color: #000000 !important; 
+    color: azure !important; 
     font-weight: 600;
   }
   .navbar-collapse ul li {
