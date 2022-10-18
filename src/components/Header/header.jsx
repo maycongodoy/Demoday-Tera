@@ -1,13 +1,14 @@
 import React from "react";
 import '../Header/header.css'
 import thumb from '../Header/logo.webp'
+import search from '../Header/search.svg'
 
 
 function Header () {
   return (
     <>
       <header className="header fixed-top">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+        <nav className="navbar navbar-expand-lg navbar-dark " aria-label="Tenth navbar example">
           <div className="container justify-content-md-center w-auto width100">
               <a className="container-fluid" href="/">
                 <img src={thumb} className="img-fluid img-thumbnail logo" alt="..."/>
@@ -19,9 +20,8 @@ function Header () {
         {/* Botão do menu responsivo */}
 
         {/* CARRINHO DE COMPRAS */}
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart-dash carrinho" viewBox="0 0 16 16">
-           <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
-           <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
         {/* CARRINHO DE COMPRAS */}
             <div className="navbar-collapse justify-content-md-center collapse show" id="navbarsExample08">
@@ -110,7 +110,9 @@ function Header () {
                       placeholder="Procurar..."
                       aria-label="Search"
                     />
-                    <button className="btn btn-outline-success" type="submit">Procurar</button>
+                    <a className="container-fluid" href="/">
+                       <img src={search} className="img-fluid img-thumbnail search" alt="..."/>
+                    </a>
                   </li>
 
                   <li>

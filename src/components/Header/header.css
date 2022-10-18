@@ -10,6 +10,10 @@ body {
 .carrinho {
     color: azure;
 }
+header {
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
   .bi:hover {
     background-color: rgb(218, 70, 70);
     color: black;
@@ -24,20 +28,37 @@ body {
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
-    border: 1px solid #000000;
+    border: 0px solid #000000;
   }
   .m-right {
     margin-right: 10px;
   }
+  .navbar {
+    --bs-bg-opacity: 0;
+  }
+  .text-white {
+    
+  }
   .navbar-collapse ul {
     height: 60px;
     align-items: center;
+   
   }
   .navbar-collapse ul li a {
     display: flex;
     line-height: 30px;
+    color: #000000 !important; 
+    font-weight: 600;
   }
   .navbar-collapse ul li {
     padding-bottom: 0;
+    font-weight: 600;
   }
+  .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: black
+}
+.search {
+  height: 34px;
+  margin-left: -4px;
+}
   
