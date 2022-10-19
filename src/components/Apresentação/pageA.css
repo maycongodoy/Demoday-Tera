@@ -42,12 +42,19 @@
    transform: rotate(-25deg) ;
    transition: 1s;
 }
-.img-page:hover {    
+.img-page:hover { 
     
     transform: rotate(0deg);
 }
 
-
+.container-video {
+    display: flex;
+    
+}
 .video {
     height: 80px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
 }

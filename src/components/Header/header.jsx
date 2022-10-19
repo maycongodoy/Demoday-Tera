@@ -1,14 +1,14 @@
 import React from "react";
-import '../Header/header.css'
 import thumb from '../Header/logo.webp'
 import search from '../Header/search.svg'
+import '../../index.css'
 
 
 function Header () {
   
   return (
     <>
-      <header className="header fixed-top">
+      <header className="header fixed-top flex bg-red-500">
         <nav className="navbar navbar-expand-lg navbar-dark " aria-label="Tenth navbar example">
           <div className="container justify-content-md-center w-auto width100">
               <a className="container-fluid" href="/">
