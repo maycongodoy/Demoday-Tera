@@ -29,7 +29,7 @@ header {
     margin-right: 10px;
   }
   .navbar {
-    --bs-bg-opacity: 0;
+   bg-opacity: 0;
   }
   .text-white {
     

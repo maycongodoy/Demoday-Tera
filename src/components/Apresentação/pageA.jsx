@@ -9,15 +9,15 @@ function pageInicial() {
 
     return (
         <>
-        <div className="containerPage container-fluid">
-            <div className="div-container">
-            <div className="title-page">Play With Electric Nike Adapt 2.0 Sneakers</div>
-               <div className="container-video">
-                <video autoplay="" loop="infinite" playsinline="" src={video1} class=" video top-0 left-0 right-0 flex h-full w-full object-cover opacity-1 z-0 group-hover:opacity-100 group-hover:z-50 rounded-xl"></video>
-                <video autoplay="" loop="infinite" playsinline="" src={video1} class=" video top-0 left-0 right-0 flex h-full w-full object-cover opacity-1 z-0 group-hover:opacity-100 group-hover:z-50 rounded-xl"></video>
-                <video autoplay="" loop="infinite" playsinline="" src={video1} class=" video top-0 left-0 right-0 flex h-full w-full object-cover opacity-1 z-0 group-hover:opacity-100 group-hover:z-50 rounded-xl"></video>
+        <div className="bg-animation-color ">
+            <div className="pt-20">
+            <div className="text-6xl">Play With Electric Nike Adapt 2.0 Sneakers</div>
+               <div className="">
+                <video autoplay="" loop="infinite" playsinline="" src={video1} class="h-14 m-2"></video>
+                <video autoplay="" loop="infinite" playsinline="" src={video1} class="h-14 m-2"></video>
+                <video autoplay="" loop="infinite" playsinline="" src={video1} class="h-14 m-2"></video>
             </div>
-            <div className="container-page container-fluid"><img src={imageTennis} id="imageTenis"  className="img-page" alt="" /></div>
+            <div className=""><img src={imageTennis} id="imageTenis"  className="img-page" alt="" /></div>
             </div>
         </div>
         </>

@@ -1,35 +1,33 @@
 import React from "react";
 import thumb from '../Header/logo.webp'
 import search from '../Header/search.svg'
-import '../../index.css'
+
 
 
 function Header () {
   
   return (
     <>
-      <header className="header fixed-top flex bg-red-500">
-        <nav className="navbar navbar-expand-lg navbar-dark " aria-label="Tenth navbar example">
-          <div className="container justify-content-md-center w-auto width100">
-              <a className="container-fluid" href="/">
-                <img src={thumb} className="img-fluid img-thumbnail logo" alt="..."/>
+      <header className="flex h-20 w-screen fixed ">
+        <nav className="flex w-screen  bg-slate-100 bg-opacity-50" >
+          <div className="">
+              <a className="flex" href="/">
+                <img src={thumb} className="h-12 rounded-xl m-3" alt="..."/>
               </a>
           </div>
          {/* Botão do menu responsivo */}
-          <div className="container-fluid menu-hamburguer">
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="true" aria-label="Toggle navigation">Ola</button>
+          <div className="">
+            <button className="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="true" aria-label="Toggle navigation"></button>
         {/* Botão do menu responsivo */}
 
         {/* CARRINHO DE COMPRAS */}
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-        </svg>
+        
         {/* CARRINHO DE COMPRAS */}
-            <div className="navbar-collapse justify-content-md-center collapse show" id="navbarsExample08">
-                <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <div className="flex w-auto" id="navbarsExample08">
+                <ul className="flex text-black">
 
-                  <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/">
+                  <li className="mx-10 flex ">
+                    <a className="" aria-current="page" href="/">
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -48,14 +46,14 @@ function Header () {
                       Home</a>                    
                   </li>
 
-                  <li className="nav-item">
-                    <a className="nav-link active" href="/"
+                  <li className="mx-10 flex">
+                    <a className="hover:bg-red-400" href="/"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
                         fill="currentColor"
-                        className="bi bi-bookmarks-fill"
+                        className="bi bi-bookmarks-fill justify-center"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -68,14 +66,14 @@ function Header () {
                       Categorias</a>
                   </li>
 
-                  <li className="nav-item">
-                    <a className="nav-link active" href="pages/landing.html"
+                  <li className="mx-10 flex">
+                    <a className="" href="pages/landing.html"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
                         fill="currentColor"
-                        className="bi bi-piggy-bank-fill"
+                        className="bi bi-piggy-bank-fill justify-center"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -86,38 +84,22 @@ function Header () {
                     </a>
                   </li>
         {/* MENU DROPDOWN */}
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="/"
-                      id="offcanvasNavbarLgDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      >Sobre Nós
-                    </a>
-                    <ul className="dropdown-menu h-auto" aria-labelledby="offcanvasNavbarLgDropdown">
-                      <li><a className="dropdown-item" href="/">Fale Conosco</a></li>
-                      <li><a className="dropdown-item" href="/">Dúvidas Frequentes</a></li>
-                      <li><hr className="dropdown-divider" /></li>
-                      <li><a className="dropdown-item" href="/">Central de Atendimento</a></li>
-                    </ul>
-                  </li>
+              
       {/* MENU DROPDOWN */}
-                  <li className="navbar navbar-expand-lg navbar-dark bg-dark" role="search">
+                  <li className="flex mx-10 " role="search">
                     <input
-                      className="form-control me-2 w-auto"
+                      className="rounded-xl mr-2"
                       type="search"
                       placeholder="Procurar..."
                       aria-label="Search"
                     />
-                    <a className="container-fluid" href="/">
-                       <img src={search} className="img-fluid img-thumbnail search" alt="..."/>
+                    <a className="" href="/">
+                       <img src={search} className="h-9 " alt="..."/>
                     </a>
                   </li>
 
-                  <li>
-                    <a href="pages/login.html" className="nav-link text-white">
+                  <li className="mx-10">
+                    <a href="pages/login.html" className="">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -133,8 +115,8 @@ function Header () {
                     </a>
                   </li>
 
-                  <li>
-                    <a href="pages/cadastro.html" className="nav-link text-white">
+                  <li className="mx-10">
+                    <a href="pages/cadastro.html" className="">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
