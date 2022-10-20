@@ -35,9 +35,13 @@ body {
 
 
 /* Animation geral */
+.div-img {
+    transform: translateX(-20%);
+}
 .img-page {  
   transform: rotate(-25deg) ;
   transition: 1s;
+  
 }
 .img-page:hover { 
    
