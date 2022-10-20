@@ -1,6 +1,7 @@
 import React from "react";
 import thumb from '../Header/logo.webp'
 import search from '../Header/search.svg'
+import { FaShoppingCart } from 'react-icons/fa';
 
 
 
@@ -26,8 +27,8 @@ function Header () {
             <div className="flex w-auto" id="navbarsExample08">
                 <ul className="flex text-black">
 
-                  <li className="mx-10 flex ">
-                    <a className="" aria-current="page" href="/">
+                  <li className="font-medium transition duration-500 mx-7 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                    <a className="flex" aria-current="page" href="/">
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -46,8 +47,8 @@ function Header () {
                       Home</a>                    
                   </li>
 
-                  <li className="mx-10 flex">
-                    <a className="hover:bg-red-400" href="/"
+                  <li className="font-medium transition duration-500 mx-7 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                    <a className="hover:bg-red-400 flex" href="/"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -66,8 +67,8 @@ function Header () {
                       Categorias</a>
                   </li>
 
-                  <li className="mx-10 flex">
-                    <a className="" href="pages/landing.html"
+                  <li className="font-medium transition duration-500 mx-7 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                    <a className="flex" href="pages/landing.html"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -86,20 +87,20 @@ function Header () {
         {/* MENU DROPDOWN */}
               
       {/* MENU DROPDOWN */}
-                  <li className="flex mx-10 " role="search">
+                  <li className="font-medium flex outline-none">
                     <input
-                      className="rounded-xl mr-2"
+                      className="rounded-xl mr-2 outline-none"
                       type="search"
                       placeholder="Procurar..."
                       aria-label="Search"
                     />
-                    <a className="" href="/">
+                    <a className="flex" href="/">
                        <img src={search} className="h-9 " alt="..."/>
                     </a>
                   </li>
 
-                  <li className="mx-10">
-                    <a href="pages/login.html" className="">
+                  <li className=" font-medium transition duration-500 mx-5 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                    <a href="pages/login.html" className="flex">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -115,8 +116,8 @@ function Header () {
                     </a>
                   </li>
 
-                  <li className="mx-10">
-                    <a href="pages/cadastro.html" className="">
+                  <li className="font-medium transition duration-500 mx-3 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                    <a href="pages/cadastro.html" className="flex">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -130,7 +131,7 @@ function Header () {
                       Cadastrar
                     </a>
                   </li>
-
+                  <a href="" className="items-center"><FaShoppingCart /></a>
                 </ul>
             </div>
           </div>
