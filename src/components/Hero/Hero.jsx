@@ -1,16 +1,17 @@
 import React from "react";
-import imageTennis from'../Apresentação/hero.png'
-import video1 from '../Videos/clip.mp4'
+import imageTennis from'../Hero/hero.png'
+import video1 from '../../assets/videos/clip.mp4'
 
 
 
-function pageInicial() {
+function Hero() {
 
-
+    
     return (
         <>
-        <div className="bg-animation-color h-screen justify-center">
-            <div className="text-6xl justify-center flex pt-20">Play With Electric Nike Adapt 2.0 Sneakers</div>
+        <div className="bg-animation-color h-screen justify-center z-10">
+            <div className="text-6xl justify-center flex pt-20">Os Melhores Tênis</div>
+           
             <div className="pt-20 w-4/5 flex  color-azure translate-x-40 justify-between ">            
                 <div className="">
                     <video autoplay="" loop="infinite" playsinline="" src={video1} class="h-20 m-2 rounded"></video>
@@ -32,6 +33,6 @@ function pageInicial() {
     )
 }
 
-export default pageInicial;
+export default Hero;
 
 

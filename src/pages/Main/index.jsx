@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from '../../components/Header/header';
-import Apresentacao from '../../components/Apresentação/pageA'
+import Header from '../../components/Navbar/Navbar';
+import Hero from '../../components/Hero/Hero'
 import '../../index.css'
 
-function Main() {
+const Main =() => {
   return (
       <>
       <Header />
-      <Apresentacao />
+      <Hero />
       </>
   );
 }
