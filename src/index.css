@@ -48,7 +48,9 @@ body {
    transform: rotate(0deg);
 }
 
-
+.icons-styles2{
+  @apply font-medium transition duration-500 mx-3 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full
+}
 
 
  
@@ -124,6 +126,10 @@ body {
     /* tranistions-theme */
     .transitions-theme {
       @apply transition-all duration-700 ease-in-out cursor-pointer;
+    }
+
+    .icons-styles2{
+      @apply font-medium transition duration-500 mx-3 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full
     }
   
   }

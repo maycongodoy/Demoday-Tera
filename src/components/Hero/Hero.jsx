@@ -14,9 +14,33 @@ function Hero() {
            
             <div className="pt-20 w-4/5 flex  color-azure translate-x-40 justify-between ">            
                 <div className="">
-                    <video autoplay="" loop="infinite" playsinline="" src={video1} class="h-20 m-2 rounded"></video>
-                    <video autoplay="" loop="infinite" playsinline="" src={video1} class="h-20 m-2 rounded"></video>
-                    <video autoplay="" loop="infinite" playsinline="" src={video1} class="h-20 m-2 rounded"></video>
+                    <video
+                     autoPlay={true}
+                     loop={true}
+                     muted={true}
+                     playsInline={true}
+                     src={video1} 
+                     class="h-20 m-4 rounded"controls>
+                     <source media="(min-width: 2px )" srcset="" /></video>
+                    <video
+                     autoPlay={true}
+                     loop={true}
+                     muted={true}
+                     playsInline={true}
+                     src={video1} 
+                     class="h-20 m-4 rounded" controls>
+                        <source media="(min-width: 2px )" srcset="" />
+
+                    </video>
+                    <video
+                     autoPlay={true}
+                     loop={true}
+                     muted={true}
+                     playsInline={true}
+                     src={video1} 
+                     class="h-20 m-4 rounded"controls>
+                     <source media="(min-width: 2px )" srcset="" /></video>
+                     
                 </div>
             <div/>    
             <div className="p-0 m-0 div-img"><img src={imageTennis} id="imageTenis"  className="img-page h-60 " alt="" /></div>

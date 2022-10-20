@@ -36,7 +36,7 @@ const Navbar = () => {
 
             <div className="flex w-auto" id="navbarsExample08">
               <ul className="flex text-black">
-                <li className="font-medium transition duration-500 mx-7 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                <li className="icons-styles2">
                   <a className="flex" aria-current="page" href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="font-medium transition duration-500 mx-7 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                <li className="icons-styles2">
                   <a className="hover:bg-red-400 flex" href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="font-medium transition duration-500 mx-7 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                <li className="icons-styles2">
                   <a className="flex" href="pages/landing.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
