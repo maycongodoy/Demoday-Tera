@@ -10,7 +10,7 @@ function Hero() {
     return (
         <>
         <div className="bg-animation-color h-screen justify-center z-10">
-            <div className="text-6xl justify-center flex pt-20">Os Melhores Tênis</div>
+            <div className="text-6xl justify-center flex pt-20 font-bold">Os Melhores Tênis</div>
            
             <div className="pt-20 w-4/5 flex  color-azure translate-x-40 justify-between ">            
                 <div className="">
