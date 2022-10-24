@@ -1,0 +1,6 @@
+.amarelo {
+    @apply relative bg-gradient-to-b from-yellow-500 to-yellow-500 shadow-lg shadow-yellow-500 items-center justify-items-center rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105
+}
+.azul {
+    @apply relative bg-gradient-to-b from-blue-500 to-blue-500 shadow-lg shadow-blue-500 items-center justify-items-center rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105
+}

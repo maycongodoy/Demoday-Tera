@@ -10,7 +10,7 @@ function NikeContainer () {
     return (
     <>
         <div className="w-screen p-5 mt-5 ">
-            <div className="text-5xl font-bold ">Mais Vendidos e populares</div>    
+            <div className="text-5xl font-bold pl-5">Mais Vendidos e populares</div>    
             <div className="flex justify-center mt-5 text-white">
                 <div className="m-3 relative bg-gradient-to-b from-blue-600 to-blue-500 shadow-lg shadow-blue-500 grid items-center justify-items-start rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105">
                     <div className="font-bold text-lg ">Nike addap blue 2.0</div>
