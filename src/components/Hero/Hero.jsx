@@ -10,17 +10,17 @@ function Hero() {
     return (
         <>
         <div className="bg-animation-color h-screen justify-center z-10">
-            <div className="text-6xl justify-center flex pt-20 font-bold">Os Melhores Tênis</div>
-           
-            <div className="pt-20 w-4/5 flex  color-azure translate-x-40 justify-between ">            
-                <div className="">
+            <div className="text-6xl justify-center w-screen flex pt-20 font-bold">Os Melhores Tênis  aqui na TERASHOP</div>
+            <div className="flex justify-center w-screen"><button type="button" class="button-theme bg-slate-200 flex justify-center shadow-slate-200 rounded-xl my-5">Explore o produto</button></div>
+            <div className="pt-6 flex w-screen px-16 justify-between">               
+            <div className=" mb- 10">
                     <video
                      autoPlay={true}
                      loop={true}
                      muted={true}
                      playsInline={true}
                      src={video1} 
-                     class="h-20 m-4 rounded"controls>
+                     class="h-24 m-4 rounded "controls>
                      <source media="(min-width: 2px )" srcset="" /></video>
                     <video
                      autoPlay={true}
@@ -28,7 +28,7 @@ function Hero() {
                      muted={true}
                      playsInline={true}
                      src={video1} 
-                     class="h-20 m-4 rounded" controls>
+                     class="h-24 m-4 rounded" controls>
                         <source media="(min-width: 2px )" srcset="" />
 
                     </video>
@@ -38,12 +38,12 @@ function Hero() {
                      muted={true}
                      playsInline={true}
                      src={video1} 
-                     class="h-20 m-4 rounded"controls>
+                     class="h-24 m-4 rounded"controls>
                      <source media="(min-width: 2px )" srcset="" /></video>
                      
                 </div>
             <div/>    
-            <div className="p-0 m-0 div-img"><img src={imageTennis} id="imageTenis"  className="img-page h-60 " alt="" /></div>
+            <div className="p-0 m-0 div-img"><img src={imageTennis} id="imageTenis"  className="img-page h-64 " alt="" /></div>
             
             <div className="flex flex-col ">
                 <svg className="m-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44"><path fill="none" d="M0 0h24v24H0z"/><path d="M13 19.938A8.001 8.001 0 0 0 12 4a8 8 0 0 0-1 15.938V14H9v-2h2v-1.654c0-1.337.14-1.822.4-2.311A2.726 2.726 0 0 1 12.536 6.9c.382-.205.857-.328 1.687-.381.329-.021.755.005 1.278.08v1.9H15c-.917 0-1.296.043-1.522.164a.727.727 0 0 0-.314.314c-.12.226-.164.45-.164 1.368V12h2.5l-.5 2h-2v5.938zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>

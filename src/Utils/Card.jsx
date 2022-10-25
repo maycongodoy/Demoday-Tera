@@ -1,4 +1,3 @@
-import React from "react";
 import Product1 from '../Utils/ImgCards/product1.png'
 import Product2 from '../Utils/ImgCards/product2.png'
 import Product3 from '../Utils/ImgCards/product3.png'
@@ -25,68 +24,78 @@ const ArrayTennis = [
         nome:"Nike Força Aérea Verde",
         tipo:"Tênis de corrida masculino",
         preco:"$200",
-        image: Product2
+        image: Product2,
+        color: "verde"
     },
     {
         nome:"Nike asr Adpt BB Rose",
         tipo:"Tênis de corrida masculino",
         preco:"$150",
         image: Product3,
-        color: "amarelo"
+        color: "vermelho"
     },
     {
         nome:"Nike Air Premium",
         tipo:"Tênis de corrida masculino",
         preco:"$180",
-        image: Product4
+        image: Product4,
+        color: "rose"
     },
     {
         nome:"Nike Adaptar BB Pro",
         tipo:"Tênis de corrida masculino",
         preco:"$190",
-        image: Product5
+        image: Product5,
+        color: "marron"
     },
     {
         nome:"Air Jordan PR3",
         tipo:"Tênis de corrida masculino",
         preco:"$200",
-        image: Product6
+        image: Product6,
+        color: "azul-marinho"
     },
     {
         nome:"Nike Air Low Premium",
         tipo:"Tênis de corrida masculino",
         preco:"$210",
-        image: Product7
+        image: Product7,
+        color:"azul-escuro"
     },
     {
         nome:"Nike Zoom Max",
         tipo:"Tênis de corrida masculino",
         preco:"$320",
-        image: Product8
+        image: Product8,
+        color:"azul-black"
     },
     {
         nome:"Nike Jordan Air Max",
         tipo:"Tênis de corrida masculino",
         preco:"$160",
-        image: Product9
+        image: Product9,
+        color: "marron-claro"
     },
     {
         nome:"Nike Old Max-x",
         tipo:"Tênis de corrida masculino",
         preco:"$185",
-        image: Product10
+        image: Product10,
+        color: "roxo"
     },
     {
         nome:"Nike Air Black Max",
         tipo:"Tênis de corrida masculino",
         preco:"$190",
-        image: Product11
+        image: Product11,
+        color: "preto"
     },
     {
         nome:"Nike Lime Jordan 11",
         tipo:"Tênis de corrida masculino",
         preco:"$400",
-        image: Product12
+        image: Product12,
+        color: "verde"
     },
 
 ]
