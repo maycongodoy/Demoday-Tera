@@ -1,17 +1,54 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
+
+import { useDispatch, useSelector } from "react-redux";
+import { selectTotalQTY, setOpenCart } from "../../app/CartSlice.js";
+
 import thumb from "../Navbar/logo.webp";
-import { FaShoppingBag, FaShoppingCart } from "react-icons/fa";
-
-
+import { FaHeart, FaShoppingBag } from "react-icons/fa";
 
 const Navbar = () => {
+  /* estado incial e final do ca */
   const [navState, setNavState] = useState(false);
-  
+  /* inicar e fecha o carrinho  */
+  const dispatch = useDispatch();
 
-  
+  const totalQTY = useSelector(selectTotalQTY);
+
+  /* gerencia o estado do botao e fechar, votar para sair do carrinho  */
+  const onCartToggle = () => {
+    dispatch(
+      setOpenCart({
+        cartState: true,
+      })
+    );
+  };
+
+  /* efeito quando faz o scroll da navbar efeito inicioal efeito final */
+  const onNavScroll = () => {
+    if (window.scrollY > 30) {
+      setNavState(true);
+    } else {
+      setNavState(false);
+    }
+  };
+  /* efeito do scorll da navbar */
+  useEffect(() => {
+    window.addEventListener("scroll", onNavScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onNavScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="flex h-20 w-screen fixed ">
+      <header
+        className={
+          !navState
+            ? "absolute top-0 left-0 right-0 opacity-100 z-50"
+            : "fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-[200]"
+        }
+      >
         <nav className="flex w-screen  bg-slate-100 bg-opacity-50">
           <div className="">
             <a className="" href="/">
@@ -19,7 +56,7 @@ const Navbar = () => {
             </a>
           </div>
           {/* Botão do menu responsivo */}
-          <div className="">
+          <div className="r-5">
             <button
               className=""
               type="button"
@@ -30,11 +67,9 @@ const Navbar = () => {
               aria-label="Toggle navigation"
             ></button>
             {/* Botão do menu responsivo */}
-            <div>
-              
-            </div>
+            <div></div>
 
-            <div className="flex w-auto" id="navbarsExample08">
+            <div className="flex pl-20" id="navbarsExample08">
               <ul className="flex text-black">
                 <li className="icons-styles2">
                   <a className="flex" aria-current="page" href="/">
@@ -88,9 +123,8 @@ const Navbar = () => {
                 {/* MENU DROPDOWN */}
 
                 {/* MENU DROPDOWN */}
-                
 
-                <li className=" font-medium transition duration-500 mx-5 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                <li className=" font-medium transition duration-500 mx-5 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400 rounded-full">
                   <a href="pages/login.html" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +141,7 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="font-medium transition duration-500 mx-3 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400  hover:rounded hover:rounded-full">
+                <li className="font-medium transition duration-500 mx-3 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400 rounded-full">
                   <a href="pages/cadastro.html" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -122,15 +156,27 @@ const Navbar = () => {
                     Cadastrar
                   </a>
                 </li>
-                {/* CARRINHO DE COMPRAS */}
+                {/* CARRINHO DE COMPRAS e Faboritos */}
                 <li>
-                  <button type="button" className="">
-                    <FaShoppingBag className=" hover:scale-110 transition-all duration-300"/>
-                    <div className="`absolute top-6 right-0 bg-black shadow w-5 h-5 text-[0.75rem] leading-tight font-medium rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-all duration-300 ${navState ? 'bg-slate-900 text-slate-100 shadow-slate-900' : 'bg-slate-100 text-slate-900 shadow-slate-100'}`">1</div>
+                  <button type="button" onClick={''} className="hover:bg-red-400 rounded-full">
+                    <FaHeart className="absolute top-4 right-14 hover:scale-110 transition-all duration-300" />
+                    <div className=
+                      {`absolute top-7 right-12 shadow w-4 h-4 text-[0.75rem] 
+                      leading-tight font-medium rounded-full 
+                      flex items-center justify-center cursor-pointer hover:scale-110 transition-all
+                       duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
+                  </button>
+                  <button type="button" onClick={onCartToggle} className="  hover:bg-red-400 rounded-full">
+                    <FaShoppingBag className="absolute top-4 right-6 hover:scale-110 transition-all duration-300" />
+                    <div className=
+                      {`absolute top-7 right-4 shadow w-4 h-4 text-[0.75rem] 
+                      leading-tight font-medium rounded-full 
+                      flex items-center justify-center cursor-pointer hover:scale-110 transition-all
+                       duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
                   </button>
                 </li>
-               
-                {/* CARRINHO DE COMPRAS */}
+
+                {/* CARRINHO DE COMPRAS e Favoritos */}
               </ul>
             </div>
           </div>

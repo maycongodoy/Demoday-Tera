@@ -1,6 +1,6 @@
 import React from "react";
-import ArrayTennis from '../../Utils/Card.jsx'
-import '../../Utils/Cards.css'
+import ArrayTennis from '../../Utils/data/data.js'
+import '../../Utils/data/data.css'
 
 
 function TopSales () {
