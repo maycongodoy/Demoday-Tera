@@ -10,9 +10,9 @@ body {
   }
 
   .bg-animation-color {
-    background: linear-gradient(-25deg, #0284c7, #0ea5e9, #38bdf8, #7dd3fc, #bae6fd, #7dd3fc,#38bdf8, #0ea5e9);
+    background: linear-gradient(-25deg, #0284c7, #0ea5e9, #38bdf8, #7dd3fc, #bae6fd, #7dd3fc,#38bdf8, #0ea5e9, #bae6fd, #7dd3fc);
     background-size: 300% 300%;
-    animation: colors 15s ease  infinite;
+    animation: colors 5s ease  infinite;
 }
 
 @keyframes colors {
