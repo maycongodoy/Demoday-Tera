@@ -89,13 +89,13 @@ const Navbar = () => {
                 </li>
 
                 <li className="icons-styles2">
-                  <a className="hover:bg-red-400 flex" href="/">
+                  <a className="flex" href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
                       fill="currentColor"
-                      className="bi bi-bookmarks-fill justify-center"
+                      className=" bi bi-bookmarks-fill justify-center"
                       viewBox="0 0 16 16"
                     >
                       <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z" />
@@ -124,7 +124,7 @@ const Navbar = () => {
 
                 {/* MENU DROPDOWN */}
 
-                <li className=" font-medium transition duration-500 mx-5 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400 rounded-full">
+                <li className="icons-styles2">
                   <a href="pages/login.html" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,7 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="font-medium transition duration-500 mx-3 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-red-400 rounded-full">
+                <li className="icons-styles2  ">
                   <a href="pages/cadastro.html" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -157,19 +157,19 @@ const Navbar = () => {
                   </a>
                 </li>
                 {/* CARRINHO DE COMPRAS e Faboritos */}
-                <li>
-                  <button type="button" onClick={''} className="hover:bg-red-400 rounded-full">
-                    <FaHeart className="absolute top-4 right-14 hover:scale-110 transition-all duration-300" />
+                <li className="ml-9">
+                  <button type="button" onClick={''} className=" rounded-full">
+                    <FaHeart className=" top-4 right-14 hover:scale-110 transition-all duration-300" />
                     <div className=
-                      {`absolute top-7 right-12 shadow w-4 h-4 text-[0.75rem] 
+                      {` top-7 right-6 shadow w-4 h-4 text-[0.75rem] 
                       leading-tight font-medium rounded-full 
                       flex items-center justify-center cursor-pointer hover:scale-110 transition-all
                        duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
                   </button>
-                  <button type="button" onClick={onCartToggle} className="  hover:bg-red-400 rounded-full">
-                    <FaShoppingBag className="absolute top-4 right-6 hover:scale-110 transition-all duration-300" />
+                  <button type="button" onClick={onCartToggle} className=" rounded-full">
+                    <FaShoppingBag className=" top-4 right-6 hover:scale-110 transition-all duration-300" />
                     <div className=
-                      {`absolute top-7 right-4 shadow w-4 h-4 text-[0.75rem] 
+                      {` top-7 right-4 shadow w-4 h-4 text-[0.75rem] 
                       leading-tight font-medium rounded-full 
                       flex items-center justify-center cursor-pointer hover:scale-110 transition-all
                        duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
