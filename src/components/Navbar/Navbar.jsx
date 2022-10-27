@@ -157,8 +157,8 @@ const Navbar = () => {
                   </a>
                 </li>
                 {/* CARRINHO DE COMPRAS e Faboritos */}
-                <li className="ml-9">
-                  <button type="button" onClick={''} className=" rounded-full">
+                <li className="ml-12">
+                  <button type="button" onClick={''} className="mr-5 rounded-full">
                     <FaHeart className=" top-4 right-14 hover:scale-110 transition-all duration-300" />
                     <div className=
                       {` top-7 right-6 shadow w-4 h-4 text-[0.75rem] 

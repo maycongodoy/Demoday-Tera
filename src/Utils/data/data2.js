@@ -258,3 +258,5 @@ const ArrayTennis2 =
       "image": "https://imgcentauro-a.akamaihd.net/230x230/95150919.jpg"
     }
   ]
+
+  export default ArrayTennis2
