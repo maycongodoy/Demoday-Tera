@@ -8,6 +8,8 @@ import NikeHighlights2 from '../../components/Nike-highlights2/NikeHighlights';
 import TopSales from '../../components/Top-sales/TopSales';
 import Cart from '../../components/cart/Cart'
 import TenisApi from '../../components/TenisAPi/TenisApi';
+import Footer from '../../components/Footer/Footer';
+import Social from '../../components/Social/Social';
 
 const Main =() => {
   return (
@@ -20,6 +22,8 @@ const Main =() => {
       <TopSales />
       <NikeHighlights2 />
       <TenisApi />
+      <Footer />
+      <Social />
       </>
   );
 }

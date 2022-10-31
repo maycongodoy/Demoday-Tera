@@ -49,28 +49,23 @@ const Navbar = () => {
             : "fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-[200]"
         }
       >
-        <nav className="flex w-screen  bg-slate-100 bg-opacity-50">
+          
+        <nav className="flex w-screen items-center bg-slate-100 bg-opacity-50 md:hidden">
           <div className="">
             <a className="" href="/">
-              <img src={thumb} className="h-10 rounded-xl m-4" alt="..." />
+              <img src={thumb} className="h-10 rounded-xl m-4 lg:hidden" alt="..." />
             </a>
           </div>
           {/* Botão do menu responsivo */}
-          <div className="r-5">
-            <button
-              className=""
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarsExample08"
-              aria-controls="navbarsExample08"
-              aria-expanded="true"
-              aria-label="Toggle navigation"
-            ></button>
+          <button data-collapse-toggle="navbar-default" type="button" class="hidden min-[767px]:block flex justify-center items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 " aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only ">Open main menu</span>
+              <svg class="w-6 h-6 " aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+            
             {/* Botão do menu responsivo */}
-            <div></div>
-
+          <div className="r-5 ">
             <div className="flex pl-20" id="navbarsExample08">
-              <ul className="flex text-black">
+              <ul className="flex text-black ">
                 <li className="icons-styles2">
                   <a className="flex" aria-current="page" href="/">
                     <svg
