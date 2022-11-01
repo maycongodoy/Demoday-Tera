@@ -17,7 +17,7 @@ function TenisApi() {
     
     return (
       <>
-        <div className="text-5xl font-bold pl-10">Mais variedades e opções.</div>
+        <div className="text-5xl font-bold pl-10 sm:text-3xl sm:mt-10">Mais variedades e opções.</div>
         <div ref={carousel} className="carousel" whileTop={{ cursor: "grabbing"}}>
           <motion.div 
           className="inner"

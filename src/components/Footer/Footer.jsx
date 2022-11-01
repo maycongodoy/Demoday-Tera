@@ -3,8 +3,8 @@ import React from "react";
 function Footer () {
     return (
         <footer className="bg-theme ">
-            <div className=" flex justify-center gap-8 py-8 px-6 md:grid-cols-4">
-                <div className="px-14">
+            <div className=" flex justify-center gap-8 py-8 px-6 md:grid-cols-4 sm:px-0">
+                <div className="px-14 ">
                     <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-gray-400">Company</h2>
                     <ul className=" text-gray-100 dark:text-gray-400">
                         <li className="mb-4">
@@ -21,7 +21,7 @@ function Footer () {
                         </li>
                     </ul>
                 </div>
-                <div className="px-14">
+                <div className="px-14 sm:hidden">
                     <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-gray-400">Help center</h2>
                     <ul className="text-gray-100 dark:text-gray-400">
                         <li className="mb-4">
@@ -52,7 +52,7 @@ function Footer () {
                         </li>
                     </ul>
                 </div>
-                <div className="px-14">
+                <div className="px-14 md:hidden">
                     <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-gray-400">Download</h2>
                     <ul class="text-gray-100 dark:text-gray-400">
                         <li class="mb-4">
