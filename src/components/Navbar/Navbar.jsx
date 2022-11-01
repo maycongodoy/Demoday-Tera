@@ -62,7 +62,7 @@ const Navbar = () => {
               <svg class="w-6 h-6 " aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
               <div className="flex justify-center w-screen  absolute top-0 -right-full h-8/12 w-screen opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300" id="navbarsExample08">
               <ul className="flex flex-col  mt-14 absolute text-black">
-                <li className="icon-style">
+                <li className="icon-style-hamburguer">
                   <a className="flex" aria-current="page" href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="icon-style">
+                <li className="icon-style-hamburguer">
                   <a className="flex" href="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="icon-style">
+                <li className="icon-style-hamburguer">
                   <a className="flex" href="pages/landing.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ const Navbar = () => {
 
                 {/* MENU DROPDOWN */}
 
-                <li className="icon-style">
+                <li className="icon-style-hamburguer">
                   <a href="pages/login.html" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="icon-style">
+                <li className="icon-style-hamburguer">
                   <a href="pages/cadastro.html" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -53,7 +53,7 @@ body {
 .icons-styles2{
   @apply font-bold transition duration-500 mx-3 my-0 px-2 items-center flex hover:translate-x-1 hover:bg-[#0ea5e9]  hover:rounded hover:rounded-full
 }
-.icon-style {
+.icon-style-hamburguer {
   @apply font-bold transition text-neutral-900 duration-500 mx-0 py-4 w-screen bg-neutral-200 justify-center items-center flex hover:translate-x-1 hover:bg-[#1ea5e9]  hover:rounded hover:rounded-full
 }
 
