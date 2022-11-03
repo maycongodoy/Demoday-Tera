@@ -13,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={Store}>
       <Toaster position='top-center' reverseOrder={false} />
-      <App />
+      <App />  
     </Provider> 
   </React.StrictMode>,
   document.getElementById('root')
