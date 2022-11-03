@@ -1,11 +1,25 @@
-import React from 'react';
-import Routes from './routes';
-import '../src/index.css'
+import React from "react";
+import { Navbar,  Cart,  Hero,  NikeContainer,  NikeHighlights,  TopSales,  TenisApi,  Footer,  Social, NikeHighlights2,} from "./components";
 
-function App() {
+import "./components/styles/index.css";
+
+const App = () => {
   return (
-      <Routes />
+    <>
+      <Navbar />
+      <Cart />
+      <main >
+        <Hero />
+        <NikeContainer />
+        <NikeHighlights />
+        <TopSales />
+        <NikeHighlights2 />
+        <TenisApi />
+      </main>
+      <Footer />
+      <Social />
+    </>
   );
-}
+};
 
 export default App;

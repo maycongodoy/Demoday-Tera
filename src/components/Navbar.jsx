@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
-import { selectTotalQTY, setOpenCart } from "../../app/CartSlice.js";
+import { selectTotalQTY, setOpenCart } from "../app/CartSlice.js";
 
-import thumb from "../Navbar/logo.webp";
+import thumb from "../assets/img/logo.webp";
 import { FaHeart, FaShoppingBag } from "react-icons/fa";
 
 const Navbar = () => {
@@ -57,10 +57,10 @@ const Navbar = () => {
             </a>
           </div>
           {/* Botão do menu responsivo */}
-          <button data-collapse-toggle="navbar-default" type="button" class="hidden md:block flex justify-center items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 group " aria-controls="navbar-default" aria-expanded="false">
+          <button data-collapse-toggle="navbar-default" type="button" class="hidden md:block justify-center items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 group " aria-controls="navbar-default" aria-expanded="false">
               <span class="sr-only ">Open main menu</span>
               <svg class="w-6 h-6 " aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-              <div className="flex justify-center w-screen  absolute top-0 -right-full h-8/12 w-screen opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300" id="navbarsExample08">
+              <div className="flex justify-center w-screen  absolute top-0 -right-full h-8/12 opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300" id="navbarsExample08">
               <ul className="flex flex-col  mt-14 absolute text-black">
                 <li className="icon-style-hamburguer">
                   <a className="flex" aria-current="page" href="/">

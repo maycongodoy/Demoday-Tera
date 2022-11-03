@@ -1,6 +1,7 @@
 import React from "react";
-import imageTennis from'../Hero/hero.png'
-import video1 from '../../assets/videos/clip.mp4'
+import imageTennis from'../assets/img/hero.png';
+import video1 from '../assets/videos/clip.mp4'
+
 
 
 

@@ -1,9 +1,8 @@
 import React from "react"
 import { useState, useEffect, useRef } from "react"
 import {motion} from 'framer-motion'
-import ArrayTennis2 from '../../Utils/data/data2'
-import '../../index.css'
-
+import ArrayTennis2 from '../data/data2'
+import './styles/index.css'
 
 function TenisApi() {
 

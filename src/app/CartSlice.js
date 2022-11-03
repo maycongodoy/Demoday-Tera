@@ -5,7 +5,7 @@ const initialState = {
   cartState: false,
   cartItems: localStorage.getItem("cart")
     ? JSON.parse(localStorage.getItem("cart"))
-    : [], // Let Suppose Database
+    : [], 
   cartTotalAmount: 0,
   cartTotalQantity: 0,
 };
@@ -21,9 +21,7 @@ const CartSlice = createSlice({
       state.cartState = action.payload.cartState;
     },
     setAddItemToCart: (state, action) => {
-      const itemIndex = state.cartItems.findIndex(
-        (item) => item.id === action.payload.id
-      );
+      const itemIndex = state.cartItems.findIndex((item)=> item.id === action.payload.id);
 
       if (itemIndex >= 0) {
         state.cartItems[itemIndex].cartQuantity += 1;

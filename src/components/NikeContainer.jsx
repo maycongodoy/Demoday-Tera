@@ -1,7 +1,7 @@
 import React from "react";
-import nikeCard1 from "../Nike-container/nike-adapt-bb.png";
-import nikeCard2 from "../Nike-container/nike-air-red.png";
-import nikeCard3 from "../Nike-container/nike-adapt-bb-smart.png";
+import nikeCard1 from "../assets/img/nike-adapt-bb.png";
+import nikeCard2 from "../assets/img/nike-air-red.png";
+import nikeCard3 from "../assets/img/nike-adapt-bb-smart.png";
 
 function NikeContainer() {
   return (
@@ -12,7 +12,7 @@ function NikeContainer() {
           <div className=" m-3 relative bg-gradient-to-b from-blue-600 to-blue-500 shadow-lg shadow-blue-500 grid items-center justify-items-start rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105 sm:max-w-xs md:justify-center md:w-auto ">
             <div className="font-bold text-lg ">Nike addap blue 2.0</div>
             <div className="sub-titl">MEN Running Shoes</div>
-            <div className="text-black text-sm font-bold text-lime-400">
+            <div className="text-black text-sm font-bold">
               R$ 200
             </div>
             <div className="stars flex">
@@ -58,7 +58,7 @@ function NikeContainer() {
           <div className="m-3 relative bg-gradient-to-b from-red-500 to-rose-500 shadow-lg shadow-rose-500 grid items-center justify-items-start rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105 sm:max-w-xs  md:justify-center md:w-auto">
             <div className="font-bold text-lg"> Nike Martine Rosa</div>
             <div className="sub-titl">Men Running Shoes</div>
-            <div className="text-black text-sm font-medium font-bold text-lime-400">
+            <div className="text-black text-sm font-medium">
               R$ 200
             </div>
             <div className="stars flex">
@@ -104,7 +104,7 @@ function NikeContainer() {
           <div className="m-3 relative bg-gradient-to-b from-violet-500 to-indigo-500 shadow-lg shadow-violet-500 grid items-center justify-items-start rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105 sm:max-w-xs md:justify-center md:w-auto">
             <div className="font-bold text-lg">Nike Smart Shoe 2.0</div>
             <div className="sub-titl">MEN Running Shoes</div>
-            <div className="text-black text-sm font-medium font-bold text-lime-400">
+            <div className="text-black text-sm font-medium ">
               R$ 200
             </div>
             <div className="stars flex">

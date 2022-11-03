@@ -1,10 +1,10 @@
 import React from "react";
 
 import { useDispatch } from "react-redux";
-import { setAddItemToCart, setOpenCart } from "../../app/CartSlice";
+import { setAddItemToCart, setOpenCart } from "../app/CartSlice";
 
-import ArrayTennis from "../../Utils/data/data.js";
-import "../../Utils/data/data.css";
+import ArrayTennis from "../data/data.js";
+import "../components/styles/data.css";
 
 const TopSales = ({ id, name, type, price, image, color }) => {
     

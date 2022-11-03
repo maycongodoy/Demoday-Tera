@@ -5,8 +5,8 @@ function Footer () {
         <footer className="bg-theme ">
             <div className=" flex justify-center gap-8 py-8 px-6 md:grid-cols-4 sm:px-0">
                 <div className="px-14 ">
-                    <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-gray-400">Company</h2>
-                    <ul className=" text-gray-100 dark:text-gray-400">
+                    <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase ">Company</h2>
+                    <ul className=" text-gray-100 ">
                         <li className="mb-4">
                             <a href="#" className=" hover:underline">About</a>
                         </li>
@@ -22,8 +22,8 @@ function Footer () {
                     </ul>
                 </div>
                 <div className="px-14 sm:hidden">
-                    <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-gray-400">Help center</h2>
-                    <ul className="text-gray-100 dark:text-gray-400">
+                    <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase ">Help center</h2>
+                    <ul className="text-gray-100 ">
                         <li className="mb-4">
                             <a href="#" className="hover:underline">Discord Server</a>
                         </li>
@@ -39,8 +39,8 @@ function Footer () {
                     </ul>
                 </div>
                 <div className="px-14">
-                    <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-gray-400">Legal</h2>
-                    <ul class="text-gray-100 dark:text-gray-400">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase ">Legal</h2>
+                    <ul class="text-gray-100 ">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Privacy Policy</a>
                         </li>
@@ -53,8 +53,8 @@ function Footer () {
                     </ul>
                 </div>
                 <div className="px-14 md:hidden">
-                    <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase dark:text-gray-400">Download</h2>
-                    <ul class="text-gray-100 dark:text-gray-400">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase ">Download</h2>
+                    <ul class="text-gray-100 ">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">iOS</a>
                         </li>

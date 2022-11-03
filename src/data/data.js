@@ -1,15 +1,15 @@
-import Product1 from "../../Utils/ImgCards/product1.png";
-import Product2 from "../../Utils/ImgCards/product2.png";
-import Product3 from "../../Utils/ImgCards/product3.png";
-import Product4 from "../../Utils/ImgCards/product4.png";
-import Product5 from "../../Utils/ImgCards/product5.png";
-import Product6 from "../../Utils/ImgCards/product6.png";
-import Product7 from "../../Utils/ImgCards/product7.png";
-import Product8 from "../../Utils/ImgCards/product8.png";
-import Product9 from "../../Utils/ImgCards/product9.png";
-import Product10 from "../../Utils/ImgCards/product10.png";
-import Product11 from "../../Utils/ImgCards/product11.png";
-import Product12 from "../../Utils/ImgCards/product12.png";
+import Product1 from "../assets/ImgCards/product1.png";
+import Product2 from "../assets/ImgCards/product2.png";
+import Product3 from "../assets/ImgCards/product3.png";
+import Product4 from "../assets/ImgCards/product4.png";
+import Product5 from "../assets/ImgCards/product5.png";
+import Product6 from "../assets/ImgCards/product6.png";
+import Product7 from "../assets/ImgCards/product7.png";
+import Product8 from "../assets/ImgCards/product8.png";
+import Product9 from "../assets/ImgCards/product9.png";
+import Product10 from "../assets/ImgCards/product10.png";
+import Product11 from "../assets/ImgCards/product11.png";
+import Product12 from "../assets/ImgCards/product12.png";
 
 const ArrayTennis = [
   {
@@ -109,6 +109,8 @@ const ArrayTennis = [
     color: "verde",
   },
 ];
+
+
 
 
 
