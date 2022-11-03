@@ -9,7 +9,7 @@ function NikeContainer() {
       <div className="w-screen p-5 mt-5 md:flex-col">
         <div className="text-5xl font-bold pl-5 sm:text-2xl">Mais Vendidos e populares</div>
         <div className="flex justify-center mt-5 text-white sm:flex-col md:flex-col md:items-center">
-          <div className=" m-3 relative bg-gradient-to-b from-blue-600 to-blue-500 shadow-lg shadow-blue-500 grid items-center justify-items-start rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105 sm:max-w-xs md:justify-center md:w-auto ">
+          <div className=" m-4 relative bg-gradient-to-b from-blue-600 to-blue-500 shadow-lg shadow-blue-500 grid items-center justify-items-start rounded-xl py-5 px-6 transition-all duration-700 ease-in-out w-full hover:scale-105 sm:max-w-xs md:justify-center md:w-auto ">
             <div className="font-bold text-lg ">Nike addap blue 2.0</div>
             <div className="sub-titl">MEN Running Shoes</div>
             <div className="text-black text-sm font-bold">
@@ -144,7 +144,7 @@ function NikeContainer() {
             <img
               src={nikeCard3}
               alt=""
-              className="transitions-theme hover:-rotate-12 h-auto w-64 lg:w-56 md:w-48 -rotate-[35deg]"
+              className="transitions-theme hover:-rotate-12 h-auto w-64 lg:w-56 md:w-50 -rotate-[35deg]"
             />
           </div>
         </div>

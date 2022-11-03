@@ -27,12 +27,12 @@ const TopSales = ({ id, name, type, price, image, color }) => {
   return (
     <>
       <div className="font-bold text-5xl pl-10 sm:text-3xl sm:hidden">Vendas mais bem avaliadas</div>
-      <div className="grid grid-flow-col grid-rows-3  gap-4 w-screen p-10 sm:hidden md:grid-cols-2 md:grid-rows-6">
+      <div className="grid grid-flow-col grid-rows-3  gap-4 w-screen p-10 sm:hidden md:grid-cols-2 md:grid-rows-4">
         {ArrayTennis.map((item) => {
           /* console.log(item) */
           return (
             <div
-              className={`h-80 w-64 pl-12 mt-5 ${
+              className={`h-80 w-70 pl-10 mt-6 ${
                 item.color ? item.color : "amarelo"
               }`}
             >
