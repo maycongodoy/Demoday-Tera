@@ -12,7 +12,7 @@ function Hero() {
         <>
         <div className="bg-animation-color h-screen  justify-center z-10 m-0 p-0" >
             <div className="text-6xl justify-center w-screen flex pt-20 font-bold lg:text-4xl sm:text-2xl sm:pt-20 sm:p-14">Os Melhores Tênis  aqui na TERASHOP</div>
-            <div className="flex justify-center w-screen sm:pr-0"><button type="button" class="button-theme bg-slate-200 flex justify-center shadow-slate-200 rounded-xl my-5 sm:mt-2">Explore o produto</button></div>
+            <div className="flex justify-center w-screen sm:pr-0"><button type="button" className="button-theme bg-slate-200 flex justify-center shadow-slate-200 rounded-xl my-5 sm:mt-2">Explore o produto</button></div>
             <div className="pt-6 flex w-screen px-16 justify-between">               
             <div className="translate-y-[-20px] lg:hidden">
                     <video
@@ -21,7 +21,7 @@ function Hero() {
                      muted={true}
                      playsInline={true}
                      src={video1} 
-                     class="h-24 m-4 rounded "controls>
+                     className="h-24 m-4 rounded "controls>
                      <source media="(min-width: 2px )" srcset="" /></video>
                     <video
                      autoPlay={true}
@@ -29,7 +29,7 @@ function Hero() {
                      muted={true}
                      playsInline={true}
                      src={video1} 
-                     class="h-24 m-4 rounded" controls>
+                     className="h-24 m-4 rounded" controls>
                         <source media="(min-width: 2px )" srcset="" />
 
                     </video>
@@ -39,7 +39,7 @@ function Hero() {
                      muted={true}
                      playsInline={true}
                      src={video1} 
-                     class="h-24 m-4 rounded"controls>
+                     className="h-24 m-4 rounded"controls>
                      <source media="(min-width: 2px )" srcset="" /></video>
                      
                 </div>

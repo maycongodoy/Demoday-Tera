@@ -57,9 +57,9 @@ const Navbar = () => {
             </a>
           </div>
           {/* Botão do menu responsivo */}
-          <button data-collapse-toggle="navbar-default" type="button" class="hidden md:block justify-center items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 group " aria-controls="navbar-default" aria-expanded="false">
-              <span class="sr-only ">Open main menu</span>
-              <svg class="w-6 h-6 " aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          <button data-collapse-toggle="navbar-default" type="button" className="hidden md:block justify-center items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 group " aria-controls="navbar-default" aria-expanded="false">
+              <span className="sr-only ">Open main menu</span>
+              <svg className="w-6 h-6 " aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
               <div className="flex justify-center w-screen  absolute top-0 -right-full h-8/12 opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300" id="navbarsExample08">
               <ul className="flex flex-col  mt-14 absolute text-black">
                 <li className="icon-style-hamburguer">
@@ -149,7 +149,7 @@ const Navbar = () => {
                 </li>
                 {/* CARRINHO DE COMPRAS e Faboritos */}
                 <li className="ml-12">
-                  <button type="button" onClick={''} className="mr-5 rounded-full">
+                  <button type="button" className="mr-5 rounded-full">
                     <FaHeart className=" top-4 right-14 hover:scale-110 transition-all duration-300" />
                     <div className=
                       {` top-7 right-6 shadow w-4 h-4 text-[0.75rem] 
@@ -248,7 +248,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="icons-styles2  ">
-                  <a href="pages/cadastro.html" className="flex">
+                  <a href="/cadastro" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -264,7 +264,7 @@ const Navbar = () => {
                 </li>
                 {/* CARRINHO DE COMPRAS e Faboritos */}
                 <li className="ml-12">
-                  <button type="button" onClick={''} className="mr-5 rounded-full">
+                  <button type="button" className="mr-5 rounded-full">
                     <FaHeart className=" top-4 right-14 hover:scale-110 transition-all duration-300" />
                     <div className=
                       {` top-7 right-6 shadow w-4 h-4 text-[0.75rem] 
@@ -272,14 +272,14 @@ const Navbar = () => {
                       flex items-center justify-center cursor-pointer hover:scale-110 transition-all
                        duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
                   </button>
-                  <button type="button" onClick={onCartToggle} className=" rounded-full">
+                  <div type="button" onClick={onCartToggle} className=" rounded-full">
                     <FaShoppingBag className=" top-4 right-6 hover:scale-110 transition-all duration-300" />
                     <div className=
                       {` top-7 right-4 shadow w-4 h-4 text-[0.75rem] 
                       leading-tight font-medium rounded-full 
                       flex items-center justify-center cursor-pointer hover:scale-110 transition-all
                        duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
-                  </button>
+                  </div>
                 </li>
 
                 {/* CARRINHO DE COMPRAS e Favoritos */}

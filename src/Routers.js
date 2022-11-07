@@ -1,7 +1,7 @@
 import { Routes, Route, } from 'react-router-dom';
 
 import Home from './Pages/Home/Home';
-import Cadasto from '../src/Pages/Cadastro/Cadastro'
+import Cadastro from '../src/Pages/Cadastro/Cadastro'
 
 const Routers = () => {
   return (

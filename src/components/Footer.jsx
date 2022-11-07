@@ -39,33 +39,33 @@ function Footer () {
                     </ul>
                 </div>
                 <div className="px-14">
-                    <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase ">Legal</h2>
-                    <ul class="text-gray-100 ">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Privacy Policy</a>
+                    <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase ">Legal</h2>
+                    <ul className="text-gray-100 ">
+                        <li className="mb-4">
+                            <a href="#" className="hover:underline">Privacy Policy</a>
                         </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Licensing</a>
+                        <li className="mb-4">
+                            <a href="#" className="hover:underline">Licensing</a>
                         </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        <li className="mb-4">
+                            <a href="#" className="hover:underline">Terms &amp; Conditions</a>
                         </li>
                     </ul>
                 </div>
                 <div className="px-14 md:hidden">
-                    <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase ">Download</h2>
-                    <ul class="text-gray-100 ">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">iOS</a>
+                    <h2 className="mb-6 text-sm font-semibold text-gray-100 uppercase ">Download</h2>
+                    <ul className="text-gray-100 ">
+                        <li className="mb-4">
+                            <a href="#" className="hover:underline">iOS</a>
                         </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Android</a>
+                        <li className="mb-4">
+                            <a href="#" className="hover:underline">Android</a>
                         </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Windows</a>
+                        <li className="mb-4">
+                            <a href="#" className="hover:underline">Windows</a>
                         </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">MacOS</a>
+                        <li className="mb-4">
+                            <a href="#" className="hover:underline">MacOS</a>
                         </li>
                     </ul>
                 </div>
