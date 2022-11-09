@@ -116,7 +116,7 @@ const Navbar = () => {
                 {/* MENU DROPDOWN */}
 
                 <li className="icon-style-hamburguer">
-                  <a href="pages/login.html" className="flex">
+                  <a href="/login" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -133,7 +133,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="icon-style-hamburguer">
-                  <a href="pages/cadastro.html" className="flex">
+                  <a href="/cadastro" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -147,7 +147,7 @@ const Navbar = () => {
                     Cadastrar
                   </a>
                 </li>
-                {/* CARRINHO DE COMPRAS e Faboritos */}
+                {/* CARRINHO DE COMPRAS e Favoritos */}
                 <li className="ml-12">
                   <button type="button" className="mr-5 rounded-full">
                     <FaHeart className=" top-4 right-14 hover:scale-110 transition-all duration-300" />
@@ -231,7 +231,7 @@ const Navbar = () => {
                 {/* MENU DROPDOWN */}
 
                 <li className="icons-styles2">
-                  <a href="pages/login.html" className="flex">
+                  <a href="/login" className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
