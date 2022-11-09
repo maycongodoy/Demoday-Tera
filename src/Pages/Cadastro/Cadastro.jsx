@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { IMaskInput } from "react-imask";
 import React from "react";
 
 function Cadastro() {
@@ -27,11 +28,14 @@ function Cadastro() {
  
 
   return (
-    <form className=" mt-20  w-screen flex flex-col items-center">
-      <div className="col-span-6  sm:col-span-3">
+
+    
+    <form className=" mt-20 bg-animation-color  w-screen flex flex-col items-center">
+      <h1 className="block text-lg uppercase font-bold text-gray-700">Cadastre-se</h1>
+      <div className="w-2/4  sm:col-span-3">
         <label
           htmlFor="first-name"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-lg font-bold text-gray-700"
         >
           Nome
         </label>
@@ -42,14 +46,14 @@ function Cadastro() {
           {...register("nome")}
           id="first-name"
           autoComplete="given-name"
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full  bg-red-100 rounded-md border-gray-300 px-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
 
-      <div className="col-span-6 sm:col-span-3">
+      <div className="w-2/4 sm:col-span-3">
         <label
           htmlFor="last-name"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-lg font-bold text-gray-700"
         >
           Sobrenome
         </label>
@@ -60,14 +64,14 @@ function Cadastro() {
           id="last-name"
           {...register("last-name")}
           autoComplete="family-name"
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full bg-red-100 rounded-md px-2 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
 
-      <div className="col-span-6 sm:col-span-4">
+      <div className="w-2/4 sm:col-span-4">
         <label
           htmlFor="email-address"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-lg font-bold text-gray-700"
         >
           Email
         </label>
@@ -78,30 +82,30 @@ function Cadastro() {
           id="email-address"
           {...register("email-adress")}
           autoComplete="email"
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full bg-red-100 rounded-md border-gray-300 px-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="col-span-6 sm:col-span-3 lg:col-span-2">
-        <label htmlFor="cep"  className="block text-sm font-medium text-gray-700" >
+      <form onSubmit={handleSubmit(onSubmit)} className="w-2/4 sm:col-span-3 lg:col-span-2">
+        <label htmlFor="cep"  className="block text-lg font-bold text-gray-700" >
           CEP
         </label>
-        <input
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+        <IMaskInput
+          className="mt-1 block w-full bg-red-100 rounded-md border-gray-300 shadow-sm px-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          mask="00000-000"
           type="text"
           required
-          placeholder="CEP"
           {...register("cep")}
-          maxLength={8}
+          maxLength={9}
           onBlur={apiCep}
-                  
+          placeholder="00000-00"                  
         />
       </form>
 
-      <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+      <div className="w-2/4 sm:col-span-6 lg:col-span-2">
         <label
           htmlFor="city"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-lg font-bold text-gray-700"
         >
           Cidade
         </label>
@@ -110,14 +114,14 @@ function Cadastro() {
           type="text"
           {...register("cidade")}
           autoComplete="address-level2"
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full bg-red-100 rounded-md border-gray-300 px-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
 
-      <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+      <div className="w-2/4 sm:col-span-3 lg:col-span-2">
         <label
           htmlFor="region"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-lg font-bold text-gray-700"
         >
           Estado
         </label>
@@ -126,28 +130,42 @@ function Cadastro() {
           type="text"
           {...register("uf")}
           autoComplete="address-level1"
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full bg-red-100 rounded-md border-gray-300 px-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
 
-      <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+      <div className="w-2/4 sm:col-span-3 lg:col-span-2">
         <label
           htmlFor="password"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-lg font-bold text-gray-700"
         >
           Senha
         </label>
         <input
           required
-          type="text"
+          type="password"
           {...register("password")}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full bg-red-100 rounded-md border-gray-300 shadow-sm px-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+        />
+      </div>
+      <div className="w-2/4 sm:col-span-3 lg:col-span-2">
+        <label
+          htmlFor="password2"
+          className="block text-lg font-bold text-gray-700"
+        >
+          Digite novamente a senha
+        </label>
+        <input
+          required
+          type="password"
+          {...register("password")}
+          className="mt-1 block w-full bg-red-100 rounded-md border-gray-300 px-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
       <button
         onClick={handleDados}
         type="button"
-        className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 my-4 px-4 border border-blue-500 hover:border-transparent rounded"
+        className=" hover:bg-blue-500 text-black-700 font-semibold hover:text-white py-2 my-4 px-4 border border-blue-500 hover:border-transparent rounded"
       >
         Enviar
       </button>
