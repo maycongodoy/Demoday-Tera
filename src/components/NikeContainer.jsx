@@ -8,7 +8,7 @@ function NikeContainer() {
     <>
       <div className="w-screen p-5 mt-5 md:flex-col">
         <div className="text-5xl font-bold pl-5 sm:text-2xl">Mais Vendidos e populares</div>
-        <div className="flex justify-center mt-5 text-white sm:flex-col md:flex-col md:items-center">
+        <div className="flex justify-center mt-5 text-white  sm:flex-col md:flex-col md:items-center">
           <div className=" m-4 relative bg-gradient-to-b from-blue-600 to-blue-500 shadow-lg shadow-blue-500 grid items-center justify-items-start rounded-xl py-5 px-6 transition-all duration-700 ease-in-out w-full hover:scale-105 sm:max-w-xs md:justify-center md:w-auto ">
             <div className="font-bold text-lg ">Nike addap blue 2.0</div>
             <div className="sub-titl">MEN Running Shoes</div>
@@ -46,9 +46,11 @@ function NikeContainer() {
                 ></path>
               </svg>
             </div>
-            <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
-              Compre Agora
-            </button>
+            <a href="/product">
+              <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
+                Compre Agora
+              </button>
+            </a>
             <img
               src={nikeCard1}
               alt=""
@@ -92,9 +94,11 @@ function NikeContainer() {
                 ></path>
               </svg>
             </div>
-            <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
-              Compre Agora
-            </button>
+            <a href="/product"> 
+              <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
+                Compre Agora
+              </button>
+            </a>
             <img
               src={nikeCard2}
               alt=""
@@ -138,9 +142,11 @@ function NikeContainer() {
                 ></path>
               </svg>
             </div>
-            <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
-              Compre Agora
-            </button>
+            <a href="/product">
+              <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
+                Compre Agora
+              </button>
+            </a>
             <img
               src={nikeCard3}
               alt=""

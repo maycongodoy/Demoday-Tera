@@ -52,7 +52,7 @@ const Navbar = () => {
           
         <nav className="flex w-screen justify-center items-center bg-slate-100 bg-opacity-50 lg:h-20">
           <div className="">
-            <a className="" href="/">
+            <a className="" href="">
               <img src={thumb} className="h-10 rounded-xl m-4 lg:hidden md:h-6 md:block" alt="..." />
             </a>
           </div>
@@ -195,7 +195,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="icons-styles2">
-                  <a className="flex" href="/">
+                  <a className="flex" href="/product">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
