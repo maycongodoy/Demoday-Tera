@@ -9,7 +9,6 @@ import {
   setCloseCart,
   setGetTotals,
 } from "../app/CartSlice.js";
-
 import CartCount from "./cart/CartCount";
 import CartEmpty from "./cart/CartEmpty";
 import CartItem from "./cart/CartItem";
@@ -20,6 +19,8 @@ const Cart = () => {
   const cartItems = useSelector(selectCartItems);
   const totalAmount = useSelector(selectTotalAmount);
   const totalQTY = useSelector(selectTotalQTY);
+
+  // console.log(cartItems)
 
   useEffect(() => {
     dispatch(setGetTotals());
@@ -33,7 +34,6 @@ const Cart = () => {
     );
   };
 
-  /* gerencia o estado do botao e fechar, votar para sair do carrinho  */
   const onClearCartItems = () => {
     dispatch(setClearCartItems());
   };
@@ -41,14 +41,19 @@ const Cart = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 right-0 bottom-0 blur-effect-theme duration-500 w-full h-screen opacity-100 z-[250] 
-        ${ifCartState
+        className={`fixed top-0 left-0 right-0 bottom-0 blur-effect-theme duration-500 w-full h-screen opacity-100 z-[250] ${
+          ifCartState
             ? "opacity-100 visible translate-x-0"
             : "opacity-0 invisible translate-x-8"
         }`}
       >
-        {/* div que faz o carrinho ficar metada da tela */}
-        <div className={`blur-effect-theme max-w-xl w-full absolute right-0`}>
+        <div
+          className={`blur-effect-theme duration-500 h-screen max-w-xl w-full absolute right-0 ${
+            ifCartState
+              ? "opacity-100 visible translate-x-0"
+              : "opacity-0 invisible translate-x-8"
+          }`}
+        >
           <CartCount
             totalQTY={totalQTY}
             onCartToggle={onCartToggle}
@@ -74,7 +79,9 @@ const Cart = () => {
                   </h1>
                 </div>
                 <div className="grid items-center gap-2">
-                  <p className="text-sm font-medium text-center">Frete Grátis</p>
+                  <p className="text-sm font-medium text-center">
+                    Frete Grátis
+                  </p>
                   <button
                     type="button"
                     className="button-theme bg-theme-cart text-white"

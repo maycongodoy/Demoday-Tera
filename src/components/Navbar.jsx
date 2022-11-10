@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectTotalQTY, setOpenCart } from "../app/CartSlice.js";
 
 import thumb from "../assets/img/logo.webp";
-import { FaHeart, FaShoppingBag } from "react-icons/fa";
+import { FaCartArrowDown, FaHeart, FaShoppingBag } from "react-icons/fa";
 
 const Navbar = () => {
   /* estado incial e final do ca */
@@ -264,20 +264,13 @@ const Navbar = () => {
                 </li>
                 {/* CARRINHO DE COMPRAS e Faboritos */}
                 <li className="ml-12">
-                  <button type="button" className="mr-5 rounded-full">
-                    <FaHeart className=" top-4 right-14 hover:scale-110 transition-all duration-300" />
+                 
+                  <div type="button" onClick={onCartToggle} className=" rounded-full hover:scale-110  ">
+                    <FaCartArrowDown className=" transition-all duration-300 text-xl " />
                     <div className=
                       {` top-7 right-6 shadow w-4 h-4 text-[0.75rem] 
                       leading-tight font-medium rounded-full 
-                      flex items-center justify-center cursor-pointer hover:scale-110 transition-all
-                       duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
-                  </button>
-                  <div type="button" onClick={onCartToggle} className=" rounded-full">
-                    <FaShoppingBag className=" top-4 right-6 hover:scale-110 transition-all duration-300" />
-                    <div className=
-                      {` top-7 right-4 shadow w-4 h-4 text-[0.75rem] 
-                      leading-tight font-medium rounded-full 
-                      flex items-center justify-center cursor-pointer hover:scale-110 transition-all
+                      flex items-center justify-center cursor-pointer transition-all
                        duration-300 bg-slate-900 text-slate-100 shadow-slate-900`}>{totalQTY}</div>
                   </div>
                 </li>

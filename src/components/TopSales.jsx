@@ -3,7 +3,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { setAddItemToCart, setOpenCart } from "../app/CartSlice";
 
-import ArrayTennis from "../data/data.js";
+import {ArrayTennis} from "../data/data.js";
 import "../components/styles/data.css";
 
 const TopSales = ({ id, name, type, price, image, color }) => {
@@ -17,8 +17,7 @@ const TopSales = ({ id, name, type, price, image, color }) => {
   };
 
   const onCartToggle = () => {
-    dispatch(
-      setOpenCart({
+    dispatch(      setOpenCart({
         cartState: true,
       })
     );

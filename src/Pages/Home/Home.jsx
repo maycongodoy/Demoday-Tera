@@ -1,15 +1,18 @@
 import React from "react";
-import { Hero, NikeContainer, NikeHighlights, TopSales, NikeHighlights2, TenisApi } from "../../components";
+import { Hero, NikeContainer, NikeHighlights, NikeHighlights2, TenisApi, Sales } from "../../components";
+import { toprateslaes, ArrayTennis2} from '../../data/data';
+
+
 
 const Home = () => {
   return (
     <>
       <Hero />
       <NikeContainer />
-      <NikeHighlights />
-      <TopSales />
+      <Sales endpoint={toprateslaes} />
+      <NikeHighlights />         
       <NikeHighlights2 />
-      <TenisApi />
+      <TenisApi endpoint={ ArrayTennis2} />
     </>
   );
 };
