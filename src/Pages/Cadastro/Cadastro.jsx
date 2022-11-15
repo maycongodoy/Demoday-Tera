@@ -31,7 +31,16 @@ function Cadastro() {
 
     
     <form className=" mt-20 bg-animation-color  w-screen flex flex-col items-center">
-      <h1 className="block text-lg uppercase font-bold text-gray-700">Cadastre-se</h1>
+      <h1 className="block text-xl uppercase font-bold text-gray-700"><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="currentColor"
+                      className="bi bi-key-fill translate-x-8"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>Cadastre-se</h1>
       <div className="w-2/4  sm:col-span-3">
         <label
           htmlFor="first-name"
@@ -165,7 +174,7 @@ function Cadastro() {
       <button
         onClick={handleDados}
         type="button"
-        className=" hover:bg-blue-500 text-black-700 font-semibold hover:text-white py-2 my-4 px-4 border border-blue-500 hover:border-transparent rounded"
+        className=" bg-orange-300 hover:bg-green-500 text-black-700 font-semibold hover:text-white py-2 my-4 px-4 border border-blue-500 hover:border-transparent rounded"
       >
         Enviar
       </button>
