@@ -3,18 +3,18 @@ import { MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { useDispatch } from "react-redux";
 import { setDecreaseItemQTY, setIncreaseItemQTY, setRemoveItemFromCart } from "../../app/CartSlice.js";
 
-const CartItem = ({ item: { id, title, text, img, color, shadow, price, cartQuantity } }) => {
+const CartItem = ({ item: { id, title, text, image, color, shadow, price, cartQuantity } }) => {
   const dispatch = useDispatch();
 
   const onRemoveItem = () => {
-    dispatch(setRemoveItemFromCart({ id, title, text, img, color, shadow, price, cartQuantity }))
+    dispatch(setRemoveItemFromCart({ id, title, text, image, color, shadow, price, cartQuantity }))
   }
 
   const onIncreaseItemQTY = () => {
-    dispatch(setIncreaseItemQTY({ id, title, text, img, color, shadow, price, cartQuantity }))
+    dispatch(setIncreaseItemQTY({ id, title, text, image, color, shadow, price, cartQuantity }))
   }
   const onDecreaseItemQTY = () => {
-    dispatch(setDecreaseItemQTY({ id, title, text, img, color, shadow, price, cartQuantity }))
+    dispatch(setDecreaseItemQTY({ id, title, text, image, color, shadow, price, cartQuantity }))
   }
 
   return (
@@ -22,7 +22,7 @@ const CartItem = ({ item: { id, title, text, img, color, shadow, price, cartQuan
       <div className="flex items-center justify-between w-full px-5">
         <div className="flex items-center gap-5">
           <div className={`bg-gradient-to-b ${color} ${shadow} relative rounded p-3 hover:scale-105 transition-all duration-75 ease-in-out grid items-center`}>
-            <img src={img} alt={`img/cart-item/${id}`} className="w-36 h-auto object-fill lg:w-28" />
+            <img src={image} alt={`img/cart-item/${id}`} className="w-36 h-auto object-fill lg:w-28" />
             <div className='absolute right-1 top-1 blur-theme-effect bg-white/80 text-black text-xs px-1 rounded'>R${price}</div>
           </div>
           <div className="grid items-center gap-4">
