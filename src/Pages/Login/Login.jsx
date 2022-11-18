@@ -1,8 +1,18 @@
-import { useForm } from "react-hook-form";
 import React from "react";
+import { useForm } from "react-hook-form";
+import { useState } from 'react';
+
+//importe axios
+import { api} from "../../services/api";
 
 function Login() {
+
   const { register, getValues } = useForm(); // Preenche os campos do formulário
+
+
+    //variaveis que recebem os elementos do input
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
   const onSubmit = (e) => {};
 
@@ -43,12 +53,9 @@ function Login() {
           Email
         </label>
         <input
+          {...register("email")}
+          type="email"
           required
-          type="text"
-          name="email-address"
-          id="email-address"
-          {...register("email-adress")}
-          autoComplete="email"
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
@@ -61,9 +68,9 @@ function Login() {
           Senha
         </label>
         <input
-          required
-          type="password"
           {...register("password")}
+          type="password"
+          required
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
       </div>
