@@ -23,6 +23,9 @@ function Cadastro() {
     console.log(dados);
     api.post("/v1/user", dados).then((response) => {
       console.log(response);
+      alert(response.data.message)
+      console.log(response.data.token);
+      localStorage.setItem("token", response.data.token);
     });
   }
  

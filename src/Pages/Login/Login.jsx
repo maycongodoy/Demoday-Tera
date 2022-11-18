@@ -9,8 +9,15 @@ function Login() {
   function handleDados() {
     const dados = getValues();
     console.log(dados);
-    api.post("/v1/login", dados).then((response) => {
+    
+    api.post("/v1/user/auth", dados).then((response) => {
       console.log(response);
+      //salva no localstorage
+      localStorage.setItem("token", response.data.token);
+      localStorage.setItem("userId", response.data.user._id);
+
+      alert (response.data.message);
+
     });
   }
 
