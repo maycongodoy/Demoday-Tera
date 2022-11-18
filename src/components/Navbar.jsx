@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 import { selectTotalQTY, setOpenCart } from "../app/CartSlice.js";
-
+import LoginOnOff from "./utils/LoginOnOff.jsx";
 import thumb from "../assets/img/logo.webp";
 import { FaCartArrowDown, FaHeart, FaShoppingBag } from "react-icons/fa";
 
