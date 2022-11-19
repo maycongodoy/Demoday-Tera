@@ -1,7 +1,9 @@
+import React from 'react'
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import ImgPerfil from '../../assets/img/noname.png'
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -9,12 +11,12 @@ function classNames(...classes) {
 
 export default function LoginOnOff() {
   return (
-    <div className="">
-        <a href=""><img className='w-[20px]' src={ImgPerfil} alt="" /></a>
+    <div className="opacity-100 z-50 ">
+       
         <Menu as="div" className="relative inline-block text-left">
         <div>
-            <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
-                <Menu></Menu>
+            <Menu.Button className=" inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+                <Menu> <a href=""><img className='w-[30px] rounded-full' src={ImgPerfil} alt="" /></a></Menu>
             <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
             </Menu.Button>
         </div>
@@ -28,7 +30,7 @@ export default function LoginOnOff() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
         >
-            <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <Menu.Items className="opacity-100 absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="py-1">
                 <Menu.Item>
                 {({ active }) => (
@@ -69,10 +71,12 @@ export default function LoginOnOff() {
                     </a>
                 )}
                 </Menu.Item>
-                <form method="POST" action="#">
+                
                 <Menu.Item>
                     {({ active }) => (
                     <button
+                        onClick={() => {localStorage.removeItem("token")
+                        window.location.reload() }}
                         type="submit"
                         className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -83,7 +87,7 @@ export default function LoginOnOff() {
                     </button>
                     )}
                 </Menu.Item>
-                </form>
+            
             </div>
             </Menu.Items>
         </Transition>
@@ -91,3 +95,4 @@ export default function LoginOnOff() {
     </div>
   )
 }
+ 

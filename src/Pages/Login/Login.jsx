@@ -16,19 +16,17 @@ function Login() {
 
   const onSubmit = (e) => {};
 
-  function handleDados() {
+ async function handleDados() {
     const dados = getValues();
     console.log(dados);
     
-    api.post("/v1/user/auth", dados).then((response) => {
+      const response = await api.post("/v1/user/auth", dados) 
       console.log(response);
       //salva no localstorage
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("userId", response.data.user._id);
 
-      alert (response.data.message);
-
-    });
+      alert (response.data.message);    
   }
 
   return (
@@ -75,7 +73,9 @@ function Login() {
         />
       </div>
       <button
-        onClick={handleDados}
+        onClick={async (dados) =>{
+        await handleDados(dados);
+        window.location.reload()}}
         type="button"
         className="bg-orange-300 hover:bg-green-500 text-black-700 font-semibold hover:text-white py-2 my-4 px-4 border border-blue-500 hover:border-transparent rounded"
       >

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import LoginUser from "./utils/LoginUser.jsx";
+import { LoginOnOff } from "./index.js";
 import { useDispatch, useSelector } from "react-redux";
 import { selectTotalQTY, setOpenCart } from "../app/CartSlice.js";
-import LoginOnOff from "./utils/LoginOnOff.jsx";
 import thumb from "../assets/img/logo.webp";
 import { FaCartArrowDown, FaHeart, FaShoppingBag } from "react-icons/fa";
 
@@ -31,6 +31,14 @@ const Navbar = () => {
       setNavState(false);
     }
   };
+  const [login,  setLogin] = useState(false); 
+
+  useEffect(() =>{
+
+    setLogin(localStorage.getItem("token"))
+   
+  }, [localStorage.getItem("token")])
+
   /* efeito do scorll da navbar */
   useEffect(() => {
     window.addEventListener("scroll", onNavScroll);
@@ -115,22 +123,8 @@ const Navbar = () => {
 
                 {/* MENU DROPDOWN */}
 
-                <li className="icon-style-hamburguer">
-                  <a href="/login" className="flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      className="bi bi-person-circle"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                    </svg>
-                    Login
-                  </a>
-                </li>
+ 
+                  
 
                 <li className="icon-style-hamburguer">
                   <a href="/cadastro" className="flex">
@@ -230,22 +224,11 @@ const Navbar = () => {
 
                 {/* MENU DROPDOWN */}
 
-                <li className="icons-styles2">
-                  <a href="/login" className="flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      className="bi bi-person-circle"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                      <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                    </svg>
-                    Login
-                  </a>
-                </li>
+                {login ? 
+                  <LoginOnOff />
+                 :
+                  <LoginUser />
+}
 
                 <li className="icons-styles2  ">
                   <a href="/cadastro" className="flex">
