@@ -26,7 +26,8 @@ function Login() {
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("userId", response.data.user._id);
 
-      alert (response.data.message);    
+      alert (response.data.message);   
+      window.location.assign("/") 
   }
 
   return (
@@ -75,7 +76,7 @@ function Login() {
       <button
         onClick={async (dados) =>{
         await handleDados(dados);
-        window.location.reload()}}
+       }}
         type="button"
         className="bg-orange-300 hover:bg-green-500 text-black-700 font-semibold hover:text-white py-2 my-4 px-4 border border-blue-500 hover:border-transparent rounded"
       >

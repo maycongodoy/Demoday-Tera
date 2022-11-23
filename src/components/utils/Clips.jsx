@@ -5,7 +5,7 @@ const Clips = ({ clip, imgsrc }) => {
   return (
    <>
       <div className='relative h-28 w-32 rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 lg:w-28 md:w-24 sm:w-16 lg:h-24 md:h-20 sm:h-14'>
-        {/* configucaçao da imagem que estao no video clips */}
+        {/* configucaçao da imgm que estao no video clips */}
         <img
           src={imgsrc}
           alt="img/clips"

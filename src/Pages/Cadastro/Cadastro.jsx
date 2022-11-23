@@ -28,6 +28,7 @@ function Cadastro() {
       alert(response.data.message);
       console.log(response.data.token);
       localStorage.setItem("token", response.data.token);
+      window.location.assign("/")
     });
   }
 

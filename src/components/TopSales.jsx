@@ -6,12 +6,12 @@ import { setAddItemToCart, setOpenCart } from "../app/CartSlice";
 import {ArrayTennis} from "../data/data.js";
 import "../components/styles/data.css";
 
-const TopSales = ({ id, name, type, price, image, color }) => {
+const TopSales = ({ id, name, type, price, img, color }) => {
     
   const dispatch = useDispatch();
 
   const onAddToCart = () => {
-    const item = { id, name, type, price, image, color};
+    const item = { id, name, type, price, img, color};
 
     dispatch(setAddItemToCart(item));
   };
@@ -94,7 +94,7 @@ const TopSales = ({ id, name, type, price, image, color }) => {
               </div>
               <img
                 className="transitions-theme hover:-rotate-12 h-36 w-64"
-                src={item.image}
+                src={item.img}
                 alt=""
               />
             </div>

@@ -292,7 +292,7 @@ const story = {
     },
     {
       title: "Nike Air Zoom GT Cut 2",
-      text: "The Bred coloryway of Zoom GT Cut 2 will be first to release this Friday, For Nike Members Nation World Wide while Sabrina Ionescus colorway is set for an October 13th release date. In the meantime, enjoy official images of both colorways below.",
+      text: "The Bred coloryway of Zoom GT Cut 2 will be first to release this Friday, For Nike Members Nation World Wide while Sabrina Ionescus colorway is set for an October 13th release date. In the meantime, enjoy official imgs of both colorways below.",
       img: "https://sneakernews.com/wp-content/uploads/2022/09/nike-zoom-gt-cut-2-release-date.jpg?w=540&h=380&crop=1",
       time: "1 Months",
       url: "https://sneakernews.com/2022/09/13/nike-zoom-gt-cut-2-officially-unveiled/",
@@ -382,14 +382,14 @@ const ArrayTennis2 =
       "name": "Tênis Nike Revolution 5 Max" ,
       "price": 249.99,
       "oldPrice": 349.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg"
     },
     {
       "id": "94313762",
       "name": "Tênis Nike Revolution 5",
       "price": 249.99,
       "oldPrice": 349.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94313762.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94313762.jpg"
     },
     
     { 
@@ -397,91 +397,91 @@ const ArrayTennis2 =
       "name": "Tênis Nike Revolution 5",
       "price": 249.99,
       "oldPrice": 349.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/943137XQ.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/943137XQ.jpg"
     },
     {
       "id": "95077714",
       "name": "Tênis Asics Patriot 12 Noosa",
       "price": 199.99,
       "oldPrice": 279.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95077714.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95077714.jpg"
     },
     {
       "id": "9507779N",
       "name": "Tênis Asics Patriot 12 Noosa",
       "price": 199.99,
       "oldPrice": 279.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/9507779N.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/9507779N.jpg"
     },
     {
       "id": "92601102",
       "name": "Tênis Oakley Modoc Low 3.0",
       "price": 449.99,
       "oldPrice": 559.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/92601102.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/92601102.jpg"
     },
     {
       "id": "9465450R",
       "name": "Tênis Nike Renew Run",
       "price": 279.99,
       "oldPrice": 399.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/9465450R.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/9465450R.jpg"
     },
     {
       "id": "95004531",
       "name": "Tênis Nike Quest 3",
       "price": 299.99,
       "oldPrice": 449.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95004531.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95004531.jpg"
     },
     {
       "id": "94672705",
       "name": "Tênis adidas Lite Racer 20",
       "price": 179.99,
       "oldPrice": 229.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94672705.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94672705.jpg"
     },
     {
       "id": "92456602",
       "name": "Tênis Infantil Puma Wired",
       "price": 179.99,
       "oldPrice": 209.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/92456602.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/92456602.jpg"
     },
     {
       "id": "94461431",
       "name": "Tênis Infantil Nike Flex Runner",
       "price": 279.99,
       "oldPrice": null,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94461431.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94461431.jpg"
     },
     {
       "id": "95850662",
       "name": "Tênis adidas Runfalcon 2.0",
       "price": 199.99,
       "oldPrice": 279.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95850662.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95850662.jpg"
     },
     {
       "id": "943137X8",
       "name": "Tênis Nike Revolution 5",
       "price": 249.99,
       "oldPrice": 349.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/943137X8.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/943137X8.jpg"
     },
     {
       "id": "93227802",
       "name": "Tênis Infantil Puma Wired",
       "price": 159.99,
       "oldPrice": 189.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/93227802.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/93227802.jpg"
     },
     {
       "id": "93828502",
       "name": "Tênis Infantil Nike Pico 5 Baby",
       "price": 139.99,
       "oldPrice": 179.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/93828502.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/93828502.jpg"
     },
     
     {
@@ -489,35 +489,35 @@ const ArrayTennis2 =
       "name": "Tênis Asics Patriot 12",
       "price": 199.99,
       "oldPrice": 259.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95150929.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95150929.jpg"
     },
     {
       "id": "95870805",
       "name": "Tênis Asics Gel-Pacemaker",
       "price": 299.99,
       "oldPrice": 399.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95870805.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95870805.jpg"
     },
     {
       "id": "95707805",
       "name": "Tênis Mizuno Wave Prophecy X",
       "price": 1299.99,
       "oldPrice": 1499.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95707805.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95707805.jpg"
     },
     {
       "id": "94672719",
       "name": "Tênis adidas Lite Racer 20",
       "price": 179.99,
       "oldPrice": 229.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94672719.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94672719.jpg"
     },
     {
       "id": "95876431",
       "name": "Tênis Asics Gel-Nagoya 3",
       "price": 299.99,
       "oldPrice": 379.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95876431.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95876431.jpg"
     },
    
     {
@@ -525,98 +525,98 @@ const ArrayTennis2 =
       "name": "Tênis Mizuno Wave Prophecy X",
       "price": 1299.99,
       "oldPrice": 1499.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95707845.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95707845.jpg"
     },
     {
       "id": "946545OX",
       "name": "Tênis Nike Renew Run",
       "price": 279.99,
       "oldPrice": 399.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/946545OX.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/946545OX.jpg"
     },
     {
       "id": "9465450M",
       "name": "Tênis Nike Renew Run",
       "price": 279.99,
       "oldPrice": 399.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/9465450M.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/9465450M.jpg"
     },
     {
       "id": "95939145",
       "name": "Tênis Fila Grand Prix",
       "price": 199.99,
       "oldPrice": 249.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95939145.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95939145.jpg"
     },
     {
       "id": "95326905",
       "name": "Tênis Fila Recovery",
       "price": 259.99,
       "oldPrice": 299.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95326905.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95326905.jpg"
     },
     {
       "id": "951509X8",
       "name": "Tênis Asics Patriot 12",
       "price": 199.99,
       "oldPrice": 259.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/951509X8.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/951509X8.jpg"
     },
     {
       "id": "9515093X",
       "name": "Tênis Asics Patriot 12",
       "price": 199.99,
       "oldPrice": 259.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/9515093X.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/9515093X.jpg"
     },
     {
       "id": "9590484W",
       "name": "Tênis Puma Anzarun SR BDP",
       "price": 229.99,
       "oldPrice": 329.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/9590484W.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/9590484W.jpg"
     },
     {
       "id": "943137D0",
       "name": "Tênis Nike Revolution 5",
       "price": 249.99,
       "oldPrice": 349.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/943137D0.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/943137D0.jpg"
     },
     {
       "id": "9465459P",
       "name": "Tênis Nike Renew Run",
       "price": 279.99,
       "oldPrice": 399.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/9465459P.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/9465459P.jpg"
     },
     {
       "id": "94218131",
       "name": "Tênis Infantil Nike Court Borough Low 2",
       "price": 199.99,
       "oldPrice": 299.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94218131.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94218131.jpg"
     },
     {
       "id": "95707858",
       "name": "Tênis Mizuno Wave Prophecy X",
       "price": 1299.99,
       "oldPrice": 1499.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95707858.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95707858.jpg"
     },
     {
       "id": "94876962",
       "name": "Tênis adidas Lite Racer 2.0",
       "price": 179.99,
       "oldPrice": 249.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94876962.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94876962.jpg"
     },
     {
       "id": "94313703",
       "name": "Tênis Nike Revolution 5",
       "price": 249.99,
       "oldPrice": 349.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/94313703.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/94313703.jpg"
     },
     
     {
@@ -624,14 +624,14 @@ const ArrayTennis2 =
       "name": "Tênis Oakley Modoc 2.0",
       "price": 449.99,
       "oldPrice": 649.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/93761902.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/93761902.jpg"
     },
     {
       "id": "95150919",
       "name": "Tênis Asics Patriot 12",
       "price": 199.99,
       "oldPrice": 259.99,
-      "image": "https://imgcentauro-a.akamaihd.net/230x230/95150919.jpg"
+      "img": "https://imgcentauro-a.akamaihd.net/230x230/95150919.jpg"
     }
   ]
 
@@ -654,7 +654,7 @@ const ArrayTennis = [
     name: "Tênis Nike Multi Inteligente",
     type: "Tênis de corrida masculino",
     price: "R$ 250.00",
-    image: Product1,
+    img: Product1,
     color: "amarelo",
   },
   {
@@ -662,7 +662,7 @@ const ArrayTennis = [
     name: "Nike Força Aérea Verde",
     type: "Tênis de corrida masculino",
     price: "R$ 200.00",
-    image: Product2,
+    img: Product2,
     color: "verde",
   },
   {
@@ -670,7 +670,7 @@ const ArrayTennis = [
     name: "Nike asr Adpt BB Rose",
     type: "Tênis de corrida masculino",
     price: "R$ 150.00",
-    image: Product3,
+    img: Product3,
     color: "vermelho",
   },
   {
@@ -678,7 +678,7 @@ const ArrayTennis = [
     name: "Nike Air Premium",
     type: "Tênis de corrida masculino",
     price: "R$ 180.00",
-    image: Product4,
+    img: Product4,
     color: "rose",
   },
   {
@@ -686,7 +686,7 @@ const ArrayTennis = [
     name: "Nike Adaptar BB Pro",
     type: "Tênis de corrida masculino",
     price: "R$ 190.00",
-    image: Product5,
+    img: Product5,
     color: "marron",
   },
   {
@@ -694,7 +694,7 @@ const ArrayTennis = [
     name: "Air Jordan PR3",
     type: "Tênis de corrida masculino",
     price: "R$ 200.00",
-    image: Product6,
+    img: Product6,
     color: "azul-marinho",
   },
   {
@@ -702,7 +702,7 @@ const ArrayTennis = [
     name: "Nike Air Low Premium",
     type: "Tênis de corrida masculino",
     price: "R$ 210.00",
-    image: Product7,
+    img: Product7,
     color: "azul-escuro",
   },
   {
@@ -710,7 +710,7 @@ const ArrayTennis = [
     name: "Nike Zoom Max",
     type: "Tênis de corrida masculino",
     price: "R$ 320.00",
-    image: Product8,
+    img: Product8,
     color: "azul-black",
   },
   {
@@ -718,7 +718,7 @@ const ArrayTennis = [
     name: "Nike Jordan Air Max",
     type: "Tênis de corrida masculino",
     price: "R$ 160.00",
-    image: Product9,
+    img: Product9,
     color: "marron-claro",
   },
   {
@@ -726,7 +726,7 @@ const ArrayTennis = [
     name: "Nike Old Max-x",
     type: "Tênis de corrida masculino",
     price: "R$ 185.00",
-    image: Product10,
+    img: Product10,
     color: "roxo",
   },
   {
@@ -734,7 +734,7 @@ const ArrayTennis = [
     name: "Nike Air Black Max",
     type: "Tênis de corrida masculino",
     price: "R$ 190.00",
-    image: Product11,
+    img: Product11,
     color: "preto",
   },
   {
@@ -742,7 +742,7 @@ const ArrayTennis = [
     name: "Nike Lime Jordan 11",
     type: "Tênis de corrida masculino",
     price: "R$ 400.00",
-    image: Product12,
+    img: Product12,
     color: "verde",
   },
 ];

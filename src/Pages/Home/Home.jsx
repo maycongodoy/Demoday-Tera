@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero, NikeContainer, NikeHighlights, NikeHighlights2, TenisApi, Sales, TopSales } from "../../components";
-import { toprateslaes, ArrayTennis2, } from '../../data/data';
+import { popularsales,toprateslaes, ArrayTennis2, } from '../../data/data';
 
 
 
@@ -9,8 +9,9 @@ const Home = () => {
     <>
       <Hero />
       <NikeContainer />
+      <Sales endpoint={popularsales} ifExists />
       <NikeHighlights /> 
-      <TopSales />          
+      <Sales endpoint={toprateslaes} />
       <NikeHighlights2 />
       <TenisApi endpoint={ ArrayTennis2} />
     </>

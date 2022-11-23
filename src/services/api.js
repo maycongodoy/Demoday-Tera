@@ -9,10 +9,10 @@ export const api = axios.create({
 
 export const httpDelete=(path, config={ }) => axios.delete(`${baseURL}${path}`, config)
 
-/* async function sendData(route, object) {
-    const {data} = await api.post(route, object)
-    return data   
-}
+//buscar user por ID pega o caminho e as configuracoes 
+export const userById=(path, config={ }) => axios.get(`${baseURL}${path}`, config)
 
-export {sendData} */
+//delete user por id
+export const deleteUSer=(path, config={ }) => axios.delete(`${baseURL}${path}`, config)
+
  

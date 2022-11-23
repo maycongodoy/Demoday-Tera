@@ -11,7 +11,6 @@ const Navbar = () => {
   const [navState, setNavState] = useState(false);
   /* inicar e fecha o carrinho  */
   const dispatch = useDispatch();
-
   const totalQTY = useSelector(selectTotalQTY);
 
   /* gerencia o estado do botao e fechar, votar para sair do carrinho  */
@@ -31,11 +30,12 @@ const Navbar = () => {
       setNavState(false);
     }
   };
-  const [login,  setLogin] = useState(false); 
 
+  const [login,  setLogin] = useState(false); 
   useEffect(() =>{
 
     setLogin(localStorage.getItem("token"))
+   
    
   }, [localStorage.getItem("token")])
 

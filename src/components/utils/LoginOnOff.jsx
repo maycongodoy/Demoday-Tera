@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -41,7 +42,7 @@ export default function LoginOnOff() {
                         'block px-4 py-2 text-sm'
                     )}
                     >
-                    Configurações 
+                    <Link to={"/DadosUser"}>Editar Conta</Link>
                     </a>
                 )}
                 </Menu.Item>
@@ -76,7 +77,7 @@ export default function LoginOnOff() {
                     {({ active }) => (
                     <button
                         onClick={() => {localStorage.removeItem("token")
-                        window.location.reload() }}
+                        window.location.assign("/") }}
                         type="submit"
                         className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',

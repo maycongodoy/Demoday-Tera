@@ -29,7 +29,7 @@ function TenisApi() {
             <motion.div className="item flex justify-center">
               {ArrayTennis2.map(item =>(
                 <motion.div className="mx-5 flex-col">
-                  <img className="h-96 max-w-sm mx-5" src={item.image} alt="" />
+                  <img className="h-96 max-w-sm mx-5" src={item.img} alt="" />
                   <div className="flex justify-center items-center w-auto font-bold">{item.name}</div>
                   <div className="font-bold  flex justify-center">{item.price}</div>
                   <div className="flex justify-center"><button
