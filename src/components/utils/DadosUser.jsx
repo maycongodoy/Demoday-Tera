@@ -42,7 +42,7 @@ export default function DadosUser() {
 
         localStorage.clear();
         alert("usuario deletado");
-        window.location.reload() 
+        window.location.assign("/")
 
       });
 
