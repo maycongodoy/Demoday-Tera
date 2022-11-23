@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import { userById } from "../../services/api";
 
-
 import { deleteUSer } from "../../services/api";
 
 
@@ -17,7 +16,7 @@ export default function DadosUser() {
   const [dadosUser, setDadosUser] = useState('');
 
   // pega usuario logado pela ID e TOKEN para poder fazer alteracoes
-  //useefect para ser redencizado apenas uma vez
+  //useefect para ser renderizado apenas uma vez
   useEffect(() => {
     userById(`/v1/user/${localStorage.getItem("userId")}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -25,10 +24,14 @@ export default function DadosUser() {
       .then((response) => {
 
         setDadosUser(response.data.user)
-
+        
 
       })
   }, []);
+
+
+
+
 
   function UserDelete() {
 
@@ -38,7 +41,7 @@ export default function DadosUser() {
       .then((response) => {
 
         localStorage.clear();
-        alert("usario deletado");
+        alert("usuario deletado");
         window.location.reload() 
 
       });
@@ -49,7 +52,7 @@ export default function DadosUser() {
   return (
     <>
 
-      <div className="nike-container bg-theme flex min-h-full items-center justify-center py-10 px-4 h-[130vh] lg:h-[125vh] md:h-[95vh] sm:h-[110vh] w-auto">
+      <div className=" bg-theme-social flex min-h-full items-center justify-center py-10 px-4 h-[130vh] lg:h-[125vh] md:h-[95vh] sm:h-[110vh] w-auto">
         <div className="w-full max-w-md mb-10 space-y-2 " >
        
 

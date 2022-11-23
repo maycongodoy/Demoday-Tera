@@ -76,7 +76,7 @@ export default function LoginOnOff() {
                 <Menu.Item>
                     {({ active }) => (
                     <button
-                        onClick={() => {localStorage.removeItem("token")
+                        onClick={() => {localStorage.clear()
                         window.location.assign("/") }}
                         type="submit"
                         className={classNames(
