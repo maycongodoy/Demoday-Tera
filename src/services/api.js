@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'http://localhost:4000'
+const baseURL = 'https://api-tera-shop.vercel.app'
 
 
 export const api = axios.create({
