@@ -60,7 +60,7 @@ const Navbar = () => {
           
         <nav className="flex w-screen justify-center items-center bg-slate-100 bg-opacity-50 lg:h-20">
           <div className="">
-            <a className="" href="">
+            <a className="" href="/">
               <img src={thumb} className="h-10 rounded-xl m-4 lg:hidden md:h-6 md:block" alt="..." />
             </a>
           </div>
@@ -124,7 +124,11 @@ const Navbar = () => {
                 {/* MENU DROPDOWN */}
 
  
-                  
+                {login ? 
+                  <LoginOnOff />
+                 :
+                  <LoginUser />
+} 
 
                 <li className="icon-style-hamburguer">
                   <a href="/cadastro" className="flex">
@@ -141,6 +145,8 @@ const Navbar = () => {
                     Cadastrar
                   </a>
                 </li>
+
+              
                 {/* CARRINHO DE COMPRAS e Favoritos */}
                 <li className="ml-12">
                   <button type="button" className="mr-5 rounded-full">

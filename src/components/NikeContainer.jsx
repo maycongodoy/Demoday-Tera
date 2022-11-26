@@ -48,7 +48,7 @@ function NikeContainer() {
             </div>
             <a href="/product">
               <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
-                Compre Agora
+                Mais detalhes!!
               </button>
             </a>
             <img
@@ -96,7 +96,7 @@ function NikeContainer() {
             </div>
             <a href="/product"> 
               <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
-                Compre Agora
+                Mais detalhes!!
               </button>
             </a>
             <img
@@ -144,7 +144,7 @@ function NikeContainer() {
             </div>
             <a href="/product">
               <button className="bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow shadow-sky-200 text-sm text-black">
-                Compre Agora
+                Mais detalhes!!
               </button>
             </a>
             <img
