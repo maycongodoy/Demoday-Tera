@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from 'react';
 
 //importe axios
-import { api} from "../../services/api";
+import { createUser} from "../../services/api";
 
 function Login() {
 
@@ -20,7 +20,7 @@ function Login() {
     const dados = getValues();
     console.log(dados);
     
-      const response = await api.post("/v1/user/auth", dados) 
+      const response = await createUser.post("/v1/user/auth", dados) 
       console.log(response);
       //salva no localstorage
       localStorage.setItem("token", response.data.token);

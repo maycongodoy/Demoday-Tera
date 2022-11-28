@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { IMaskInput } from "react-imask";
 import React from "react";
 
-import { api } from "../../services/api";
+import { createUser } from "../../services/api";
 
 function Cadastro() {
   const { register, handleSubmit, setValue, getValues } = useForm(); // Preenche os campos do formulário
@@ -23,7 +23,7 @@ function Cadastro() {
   function handleDados() {
     const dados = getValues();
     console.log(dados);
-    api.post("/v1/user", dados).then((response) => {
+    createUser.post("/v1/user", dados).then((response) => {
       console.log(response);
       alert(response.data.message);
       console.log(response.data.token);
