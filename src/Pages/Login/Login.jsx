@@ -1,6 +1,5 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useState } from 'react';
 
 import { toast } from "react-hot-toast";
 
@@ -27,7 +26,7 @@ function Login() {
       })
       .catch(err => toast(err.message));
   }
-  
+
   return (
 
     <form className="bg-theme-social mt-20  w-screen flex flex-col items-center">
