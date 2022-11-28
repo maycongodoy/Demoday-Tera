@@ -5,14 +5,15 @@ import React from "react";
 import { createUser } from "../../services/api";
 
 function Cadastro() {
-  const { register, handleSubmit, setValue, getValues } = useForm(); // Preenche os campos do formulário
+  // Preenche os campos do formulário
+  const { register, handleSubmit, setValue, getValues } = useForm(); 
 
   const apiCep = (e) => {
+
     const cep = e.target.value.replace(/\D/g, "");
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setValue("city", data.localidade);
         setValue("UF", data.uf);
       });
@@ -21,15 +22,16 @@ function Cadastro() {
   const onSubmit = (e) => {};
 
   function handleDados() {
+     
     const dados = getValues();
-    console.log(dados);
     createUser.post("/v1/user", dados).then((response) => {
-      console.log(response);
-      alert(response.data.message);
-      console.log(response.data.token);
+      
+      toast(response.data.message)
       localStorage.setItem("token", response.data.token);
+      
       window.location.assign("/")
     });
+    
   }
 
   return (

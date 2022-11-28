@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
-import logo from "../../assets/logo.png";
+
 
 import { getUserById, putUserById, deleteUSer, createUser } from "../../services/api";
 import { toast } from "react-hot-toast";
@@ -35,10 +35,11 @@ export default function DadosUser() {
   }, []);
 
   //atualiza usario pelo id
-  
     putUserById(`/v1/user/${localStorage.getItem("userId")}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     }).then((response) => {
+      
+      
                   
     });
 
@@ -85,13 +86,7 @@ export default function DadosUser() {
     <>
       <div className="nike-container bg-theme flex min-h-full items-center justify-center py-10 px-4 h-[130vh] lg:h-[125vh] md:h-[95vh] sm:h-[110vh] w-auto">
         <div className="w-full max-w-md mb-10 space-y-2 ">
-          <div>
-            <img
-              className={`mx-auto h-40 w-auto mt-40 text-gray-900`}
-              src={logo}
-              alt="Your Company"
-            />
-          </div>
+        
           {!showData ? (
             <div>
               <label className="relative font-semibold block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 mb-1 text-gray-100  focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
@@ -107,17 +102,7 @@ export default function DadosUser() {
                 CEP: {dadosUser.cep}
               </label>
 
-              <label className="relative font-semibold block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 mb-1 text-gray-100  focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                Endereço: {dadosUser.address}
-              </label>
-
-              <label className="relative font-semibold block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 mb-1 text-gray-100  focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                N°: {dadosUser.number}
-              </label>
-
-              <label className="relative font-semibold block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 mb-1 text-gray-100  focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                Bairro: {dadosUser.district}
-              </label>
+              
 
               <label className="relative font-semibold block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 mb-1 text-gray-100  focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
                 Cidade: {dadosUser.city}
@@ -144,30 +129,7 @@ export default function DadosUser() {
                   maxLength="8"
                  
                 />
-                <input
-                  {...register("address")}
-                  type="text"
-                  required
-                  className="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 mb-1 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-
-                  placeholder="Rua / Av / Trav"
-                />
-                <input
-                  {...register("number")}
-                  type="text"
-                  required
-                  className="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 mb-1 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-
-                  
-                  placeholder="Número"
-                />
-                <input
-                  {...register("district")}
-                  type="text"
-                  className="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 mb-1 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-
-                  placeholder="Bairro"
-                />
+                
                 <input
                   {...register("city")}
                   type="text"
