@@ -25,9 +25,10 @@ function Cadastro() {
      
     const dados = getValues();
     createUser.post("/v1/user", dados).then((response) => {
-      
-      toast(response.data.message)
       localStorage.setItem("token", response.data.token);
+      console.log(response.data.message);
+      toast(response.data.message)
+
       
       window.location.assign("/")
     });

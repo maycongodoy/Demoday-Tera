@@ -10,9 +10,7 @@ export const createUser = axios.create({baseURL})
 //buscar user por ID pega o caminho e as configuracoes 
 export const getUserById=(path, config={ }) => axios.get(`${baseURL}${path}`, config)
 
-export const putUserById=(path, config={ }) => axios.put(`${baseURL}${path}`, config)
-
-export const upUserById=(path, config={ }) => axios.put(`${baseURL}${path}`, config)
+export const updateUser=(path, data, config={ }) => axios.put(`${baseURL}${path}`, data, config)
 
 
 //delete user por id

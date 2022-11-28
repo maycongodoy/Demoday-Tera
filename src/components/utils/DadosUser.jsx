@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 
 import {
   getUserById,
-  upUserById,
+  updateUser,
   deleteUSer,
   
 } from "../../services/api";
@@ -35,13 +36,27 @@ export default function DadosUser() {
     });
   }, []);
   
-  function saveUserdata(){}
 
-  //atualiza usario pelo id
 
- /*  putUserById(`/v1/user/${localStorage.getItem("userId")}`, {
-    headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
-  }); */
+  function Update(){
+    const dataToUpdate = {
+      username: dadosUser.username,
+      lastname: dadosUser.lastname
+      
+    }
+
+    updateUser(`/v1/user/${localStorage.getItem("userId")}`, dataToUpdate, {
+      headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    }).then(response=>{
+      toast("dados atualizados")
+      console.log(response.data);
+      
+      
+    }) 
+
+  } 
+
+
 
   //funcao de Deletar usuario
   function UserDelete() {
@@ -138,7 +153,7 @@ export default function DadosUser() {
               {!showData ? "Atualizar informações" : "Voltar"}
             </button>
             <button
-              onClick={"saveUserdata"}
+              onClick={Update}
               type="button"
               className="relative opacity-100 flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 mb-10 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
