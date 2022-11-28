@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'https://api-tera-shop.vercel.app'
+const baseURL = 'https://back-end-demoday.vercel.app/'
 //const baseURL = "http://localhost:4000"
 
 
