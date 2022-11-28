@@ -38,7 +38,7 @@ export default function DadosUser() {
     putUserById(`/v1/user/${localStorage.getItem("userId")}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     }).then((response) => {
-      
+       
       
                   
     });

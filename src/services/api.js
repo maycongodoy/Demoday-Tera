@@ -12,6 +12,9 @@ export const getUserById=(path, config={ }) => axios.get(`${baseURL}${path}`, co
 
 export const putUserById=(path, config={ }) => axios.put(`${baseURL}${path}`, config)
 
+export const upUserById=(path, config={ }) => axios.updade(`${baseURL}${path}`, config)
+
+
 //delete user por id
 export const deleteUSer=(path, config={ }) => axios.delete(`${baseURL}${path}`, config)
 
