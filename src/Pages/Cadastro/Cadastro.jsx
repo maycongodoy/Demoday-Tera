@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { IMaskInput } from "react-imask";
 import React from "react";
-
+import { toast } from "react-hot-toast";
 import { createUser } from "../../services/api";
 
 function Cadastro() {

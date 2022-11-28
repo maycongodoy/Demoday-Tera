@@ -7,7 +7,8 @@ import {
   deleteUSer,
   
 } from "../../services/api";
-import { toast } from "react-hot-toast";
+
+//import { toast } from "react-hot-toast";
 
 export default function DadosUser() {
   const { register, setValue, getValues } = useForm();
